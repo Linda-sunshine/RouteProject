@@ -56,6 +56,32 @@ public class MTLinAdapt extends CoLinAdapt {
 		return m_userList.size()*m_dim*2 + m_dimSup*2;
 	}
 	
+	public void setParams(double e1, double e2, double e3, double e4){
+		m_eta1 = e1;
+		m_eta2 = e2;
+		m_eta3 = e3;
+		m_eta4 = e4;
+	}
+	//Load global model from file.
+	public void loadGlobalModel(HashMap<String, Integer> featureMap, String filename){
+			
+		try{
+			BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(filename), "UTF-8"));
+			String line = reader.readLine();
+			String features[];
+			m_gWeights = new double[m_featureSize+1];//to include the bias term
+			
+			features = line.split(",");
+			System.out.println(features.length + " features are loaded for global model.");
+			for(int i=0; i<features.length; i++){
+				m_gWeights[i] = Double.valueOf(features[i]);
+			}
+				
+			reader.close();
+			} catch(IOException e){
+				System.err.format("[Error]Fail to open file %s.\n", filename);
+			}
+		}
 	// Feature group map for the super user.
 	public void loadFeatureGroupMap4SupUsr(String filename){
 		// If there is no feature group for the super user.
@@ -237,7 +263,7 @@ public class MTLinAdapt extends CoLinAdapt {
 						System.out.println();
 				}
 				oldFValue = fValue;
-				LBFGS.lbfgs(vSize, 6, m_A, fValue, m_g, false, m_diag, iprint, 1e-3, 1e-16, iflag);// In the training process, A is updated.
+				LBFGS.lbfgs(vSize, 6, m_A, fValue, m_g, false, m_diag, iprint, 1e-3, 1e-20, iflag);// In the training process, A is updated.
 			} while (iflag[0] != 0);
 			System.out.println();
 		} catch (ExceptionWithIflag e) {

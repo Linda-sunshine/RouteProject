@@ -30,6 +30,9 @@ public class IndividualSVM extends ModelAdaptation {
 		super(classNo, featureSize);
 		m_testmode = TestMode.TM_batch;
 	}
+	public void setC(double c){
+		m_C = c;
+	}
 	public void setBias(boolean b){
 		m_bias = b;
 	}

@@ -1,0 +1,1536 @@
+30 users are loaded from ./data/Dataset2/Shuffle/...
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxooooooooooooooooooooxoooooxooooooooooooooooooooooooooooooooooooooooooooooxoooooooooooooooo
+ooooooooooxooooooooooooooooxoooooooooxoooooxoooooooooxoooooooooooooooooooooooxoooooooooxooooooooxooo
+oooooxooooooooxooooooooooooooooooooooooooooooooooooooooxooooooooooooooooxoooooxooooooooooooooooooooo
+oooooooooxooooooooooooooooooooooooooooooooooooooooooooooooooooooooxoooooooooxooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.001,eta2:0.001,eta3:0.001,eta4:0.001, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	30
+1	27	162
+Micro F1:
+Class 0: 0.8571	Class 1: 0.8504	
+Macro F1:
+Class 0: 0.8271	Class 1: 0.8460	
+
+Overall accuracy: 0.8538.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooooooxoooooxooooooooooooooooooooooxooooooooxoooooxoooooooooooooxoooooooooooooooooooooo
+ooxooooooooooooooooxooooxoooooooooooooooxoooooooooooooooooxoooooooooooooooooooooxooooooooooooooooooo
+ooooooooooxooooooooooooooooooooooooxooooxooooooooooooooooooooooooooooooooooooooooooooooooooooooooxoo
+ooooooooooooxooooooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.001,eta2:0.001,eta3:0.002,eta4:0.002, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	28
+1	27	164
+Micro F1:
+Class 0: 0.8615	Class 1: 0.8564	
+Macro F1:
+Class 0: 0.8331	Class 1: 0.8520	
+
+Overall accuracy: 0.8590.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxooooooooooooooxoooooooooooooxoooooxoooooooooxoooooooooooooooxooooxoooooooooooooooooooxoooo
+ooooxooooooooooooooooxooooxooooooooooxooooooooooooooooooooooooooooooooooooooooooooooooooooooooooxooo
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.001,eta2:0.001,eta3:0.003,eta4:0.003, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	27
+1	27	165
+Micro F1:
+Class 0: 0.8636	Class 1: 0.8594	
+Macro F1:
+Class 0: 0.8358	Class 1: 0.8533	
+
+Overall accuracy: 0.8615.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxoooooooooooooooooxooooxooooooooooooooooooooooooxoooooooooooooooooxoooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooxoooooooooooooooooooooxooooooo
+ooooooxoooooooooxoooooooooooxooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.001,eta2:0.001,eta3:0.004,eta4:0.004, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	27
+1	27	165
+Micro F1:
+Class 0: 0.8636	Class 1: 0.8594	
+Macro F1:
+Class 0: 0.8324	Class 1: 0.8543	
+
+Overall accuracy: 0.8615.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooxoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooxooo
+ooooooooooooooxoooooooooooooooooooxoooooooooooxoooooooooooxoooooooooooooooooooxoooooooooooxooooooooo
+oooooooooooooooooooooooxoooooooooxooooooooxoooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.001,eta2:0.001,eta3:0.005,eta4:0.005, personalized:true]
+Micro confusion matrix:
+	0	1
+0	170	28
+1	28	164
+Micro F1:
+Class 0: 0.8586	Class 1: 0.8542	
+Macro F1:
+Class 0: 0.8250	Class 1: 0.8504	
+
+Overall accuracy: 0.8564.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooooooooooxoooooooooooooooooooxooooooooxooooooooooooooxoooooooooooooooooooxooo
+ooooooooooooooooooooooooooooooooooooooooooooooooxooooooooooooooxoooooooooooxoooooooooooooooooooooooo
+ooooooooooooooooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.001,eta2:0.001,eta3:0.006,eta4:0.006, personalized:true]
+Micro confusion matrix:
+	0	1
+0	170	27
+1	28	165
+Micro F1:
+Class 0: 0.8608	Class 1: 0.8571	
+Macro F1:
+Class 0: 0.8286	Class 1: 0.8542	
+
+Overall accuracy: 0.8590.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxoooxoooooxoooooooooxoooooxoooooooooxooooooooxoooooooooxooooooooooooooooooooooooooooo
+xoooooooooooooooooooooooxooooxoooooxooooooooooooooooooooooooooooooooooooooooooooooooxoooooxooooxoooo
+ooooxoooooooooooxooooooxooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.001,eta2:0.001,eta3:0.007,eta4:0.007, personalized:true]
+Micro confusion matrix:
+	0	1
+0	170	26
+1	28	166
+Micro F1:
+Class 0: 0.8629	Class 1: 0.8601	
+Macro F1:
+Class 0: 0.8312	Class 1: 0.8568	
+
+Overall accuracy: 0.8615.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxoooxooooooooooooooxoooooooooxooooxooooooooooooooooooooooooooooooxooooooooooooooooxoo
+oooooooooooooooooooooooooxooooxoooooooooxooooooooooooooooooooooooooooooooooooooxooooooooooooooooxooo
+
+MT-LinAdapt[dim:9, supDim:9, eta1:0.001,eta2:0.001,eta3:0.008,eta4:0.008, personalized:true]
+Micro confusion matrix:
+	0	1
+0	170	25
+1	28	167
+Micro F1:
+Class 0: 0.8651	Class 1: 0.8630	
+Macro F1:
+Class 0: 0.8308	Class 1: 0.8615	
+
+Overall accuracy: 0.8641.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxoooxoooooooooooooooooooooooooxooooooooooxoooooooooooooooooooooxooooooooooooooooooooo
+oooooooxooooooooooooooooooooooooooooxooooooooxoooooooooooooxoooxooooooooxoooooxooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.001,eta2:0.001,eta3:0.009,eta4:0.009, personalized:true]
+Micro confusion matrix:
+	0	1
+0	170	27
+1	28	165
+Micro F1:
+Class 0: 0.8608	Class 1: 0.8571	
+Macro F1:
+Class 0: 0.8260	Class 1: 0.8559	
+
+Overall accuracy: 0.8590.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxooooooooooooooooooooooooooooooooooooooooooooooooxoooooxoooooooooooooooooooooooooooooooxooo
+oooooxooooooooxoooooooooooooooooooooooooooooooooooooooooxooooooooooooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.001,eta2:0.001,eta3:0.010,eta4:0.010, personalized:true]
+Micro confusion matrix:
+	0	1
+0	170	26
+1	28	166
+Micro F1:
+Class 0: 0.8629	Class 1: 0.8601	
+Macro F1:
+Class 0: 0.8278	Class 1: 0.8593	
+
+Overall accuracy: 0.8615.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooooooxoooooxooooooooooxoooooooooooooooooooooooooooxooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooxooooooooooooooooxoooooooooooooooooxooooo
+ooooxooooooooooooooooooooooooxoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooxoo
+oooooooxoooooooooooooooooooooooooooooxooooxooooooooooxoooooxoooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.002,eta2:0.002,eta3:0.001,eta4:0.001, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	29
+1	27	163
+Micro F1:
+Class 0: 0.8593	Class 1: 0.8534	
+Macro F1:
+Class 0: 0.8314	Class 1: 0.8474	
+
+Overall accuracy: 0.8564.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxooooooooooooooxoooooooooooooooooooooooooooooooooooooooooooooooooooooooxooooooooooooooooooo
+oooooooooooooooooooooooooooooxoooooooooooooooooooxoooooooooooooooooooooooooooooooooooooooooooooooooo
+oooxoooooooooooooooxoooooooooooooooooxoooooooooooooooooooxooooooooooooooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.002,eta2:0.002,eta3:0.002,eta4:0.002, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	28
+1	27	164
+Micro F1:
+Class 0: 0.8615	Class 1: 0.8564	
+Macro F1:
+Class 0: 0.8298	Class 1: 0.8517	
+
+Overall accuracy: 0.8590.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooooooxoooooooooooooooooooooooooooooooooooooxoooooooooooooooooxoooooooooxooooo
+oooooooooooooooooooooooooxoooooooooooooooooooooooxooooooooooxoooxooooooooooooooooooooooooooooooooooo
+oxoooooooooxooooooooooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.002,eta2:0.002,eta3:0.003,eta4:0.003, personalized:true]
+Micro confusion matrix:
+	0	1
+0	170	29
+1	28	163
+Micro F1:
+Class 0: 0.8564	Class 1: 0.8512	
+Macro F1:
+Class 0: 0.8216	Class 1: 0.8486	
+
+Overall accuracy: 0.8538.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooxooooooooxooooooooooooooooooooooooooooooooooooooooxooooooooooooxooooxooooooooooo
+ooxooooooooooooooooooooooooxooooxooooooooooooooooooooxoooooooooooooooooooooooooooooooooooooooooooooo
+oooooxooooooooooooxooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.002,eta2:0.002,eta3:0.004,eta4:0.004, personalized:true]
+Micro confusion matrix:
+	0	1
+0	170	28
+1	28	164
+Micro F1:
+Class 0: 0.8586	Class 1: 0.8542	
+Macro F1:
+Class 0: 0.8234	Class 1: 0.8532	
+
+Overall accuracy: 0.8564.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxoooooooooooooxoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooxooooooooooxooooooooooooooooxoooooooooxoooooooooooooooooooooooooooooooxooooooooooxooooooooooooo
+ooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.002,eta2:0.002,eta3:0.005,eta4:0.005, personalized:true]
+Micro confusion matrix:
+	0	1
+0	170	26
+1	28	166
+Micro F1:
+Class 0: 0.8629	Class 1: 0.8601	
+Macro F1:
+Class 0: 0.8278	Class 1: 0.8593	
+
+Overall accuracy: 0.8615.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooxoooooooooooooooooooxoo
+oooooooooooxooooxoooooooooooooooooooooooooooooooooooooxooooooooooooooooooooooxooooxoooooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.002,eta2:0.002,eta3:0.006,eta4:0.006, personalized:true]
+Micro confusion matrix:
+	0	1
+0	170	26
+1	28	166
+Micro F1:
+Class 0: 0.8629	Class 1: 0.8601	
+Macro F1:
+Class 0: 0.8278	Class 1: 0.8593	
+
+Overall accuracy: 0.8615.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooooooooooooxoooooooooooooooooooooooooooooooooooooooooooxoooooxooooxooooooooox
+oooooxoooooooooooooxoooooooooooooooxooooooooooooooooooooooooooooooooooooxooooooooooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.002,eta2:0.002,eta3:0.007,eta4:0.007, personalized:true]
+Micro confusion matrix:
+	0	1
+0	170	27
+1	28	165
+Micro F1:
+Class 0: 0.8608	Class 1: 0.8571	
+Macro F1:
+Class 0: 0.8260	Class 1: 0.8559	
+
+Overall accuracy: 0.8590.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxoooooooooooooooxooooooooooooooooooooxooooooooooooooooooooooooooooxooooooooooxooooooo
+ooxooooooooxoooooooooooooooooooooooooooooooxoooooooooooooooooooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.002,eta2:0.002,eta3:0.008,eta4:0.008, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	25
+1	27	167
+Micro F1:
+Class 0: 0.8680	Class 1: 0.8653	
+Macro F1:
+Class 0: 0.8335	Class 1: 0.8648	
+
+Overall accuracy: 0.8667.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxooooooooooooooooooxoooooooooooxoooooooooooooooooooooxooooooooooooxooooooooxoooooooooooooox
+ooooooooooooxoooooooooxoooooooooooooooooooooooooooooooooooxooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.002,eta2:0.002,eta3:0.009,eta4:0.009, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	25
+1	27	167
+Micro F1:
+Class 0: 0.8680	Class 1: 0.8653	
+Macro F1:
+Class 0: 0.8335	Class 1: 0.8648	
+
+Overall accuracy: 0.8667.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxooooooooooooooxooooxoooooooooooooooooooooooooooooooooooxoooooooooooooooooooooxooooxooooooo
+oooooooooooooxooooooooooooooooooxooooooooxoooooooooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.002,eta2:0.002,eta3:0.010,eta4:0.010, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	24
+1	27	168
+Micro F1:
+Class 0: 0.8702	Class 1: 0.8682	
+Macro F1:
+Class 0: 0.8367	Class 1: 0.8668	
+
+Overall accuracy: 0.8692.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxooooxooooooooooooooooooooooooooooooooooooooooooooooooxooooooooooooooxoooooo
+oxoooooooooooxooooxooooooooooooooooooooooooooooooooooxoooooxooooooooooooooxooooooooooooooooooooooooo
+xooooooooooooooooooooxooxooooooooxooooooooooooooooxooooooooooooooooxoooooooooxoooooooooooooooooooooo
+oooxoooooooooxoooooxooooxoooooxoooooxooooooooooooooooooxoooooooooooooooooooxooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.003,eta2:0.003,eta3:0.001,eta4:0.001, personalized:true]
+Micro confusion matrix:
+	0	1
+0	170	29
+1	28	163
+Micro F1:
+Class 0: 0.8564	Class 1: 0.8512	
+Macro F1:
+Class 0: 0.8243	Class 1: 0.8470	
+
+Overall accuracy: 0.8538.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxoooooooxoooooooooooooooooooooooooooooooxoooooooooooooooooooooooooooooooooooooxoooooo
+ooooooooooooooooooooooooooxoooooooooxooooooooooooooooooooooxooooooooooooooooooooooooooxooooooooxoooo
+oooooooooooooooooooxoooooooooooooxooooxoooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.003,eta2:0.003,eta3:0.002,eta4:0.002, personalized:true]
+Micro confusion matrix:
+	0	1
+0	170	30
+1	28	162
+Micro F1:
+Class 0: 0.8543	Class 1: 0.8482	
+Macro F1:
+Class 0: 0.8198	Class 1: 0.8452	
+
+Overall accuracy: 0.8513.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooxoooooxooooxooooooooooooooooooooooooooooooooooooooooooxoooooooooooooxooooxoooooo
+ooooooxooooooooooooooxooooooooxoooooooxooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+oxooooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.003,eta2:0.003,eta3:0.003,eta4:0.003, personalized:true]
+Micro confusion matrix:
+	0	1
+0	170	27
+1	28	165
+Micro F1:
+Class 0: 0.8608	Class 1: 0.8571	
+Macro F1:
+Class 0: 0.8253	Class 1: 0.8567	
+
+Overall accuracy: 0.8590.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooxoooooooxooooooooooooooooxoooooooooooooooooxoooooooooxoooooooooooooooooooooooooo
+oxooooooooooooooooxooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooxoo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.003,eta2:0.003,eta3:0.004,eta4:0.004, personalized:true]
+Micro confusion matrix:
+	0	1
+0	170	27
+1	28	165
+Micro F1:
+Class 0: 0.8608	Class 1: 0.8571	
+Macro F1:
+Class 0: 0.8260	Class 1: 0.8559	
+
+Overall accuracy: 0.8590.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxoooooooooxooooooooxooooooooooooooooooooooooooooxooooooooooooooooooooooxooooooooooooo
+oooooooooooooooooxooooooooooooxoooooooxooooxoooooooooooooooooxooooxooooooooooooxooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.003,eta2:0.003,eta3:0.005,eta4:0.005, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	25
+1	27	167
+Micro F1:
+Class 0: 0.8680	Class 1: 0.8653	
+Macro F1:
+Class 0: 0.8349	Class 1: 0.8633	
+
+Overall accuracy: 0.8667.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxoooooooooooooxooooooooxoooooooooooooooooooooooooooooooooooooooooooooooooooooooxoooxo
+ooxoooxooooooooooooooooooooooooooxooooooooooooxooooooooooooxoooooooooooooooooooooxoo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.003,eta2:0.003,eta3:0.006,eta4:0.006, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	24
+1	27	168
+Micro F1:
+Class 0: 0.8702	Class 1: 0.8682	
+Macro F1:
+Class 0: 0.8367	Class 1: 0.8668	
+
+Overall accuracy: 0.8692.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxoooooooooooooooooooooooooooooooooooooxoooooooooooooooooooooooooxoooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooooooooxooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.003,eta2:0.003,eta3:0.007,eta4:0.007, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	25
+1	27	167
+Micro F1:
+Class 0: 0.8680	Class 1: 0.8653	
+Macro F1:
+Class 0: 0.8349	Class 1: 0.8633	
+
+Overall accuracy: 0.8667.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxoooooooooxooooooooooooxooooooooooooooooooooooxoooooooooxoooxoooooooooooooox
+oooooooooooooooooooooxooooooooooooooooooxooooooooooooooooooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.003,eta2:0.003,eta3:0.008,eta4:0.008, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	24
+1	27	168
+Micro F1:
+Class 0: 0.8702	Class 1: 0.8682	
+Macro F1:
+Class 0: 0.8367	Class 1: 0.8668	
+
+Overall accuracy: 0.8692.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxooooxoooooooooooooooooooooooooxoooooooooooooooooxooooxooooooooooooooooooooo
+oooooooooooooooxoooooooooooooooooooooooooooooooooooooooooxoo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.003,eta2:0.003,eta3:0.009,eta4:0.009, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	24
+1	27	168
+Micro F1:
+Class 0: 0.8702	Class 1: 0.8682	
+Macro F1:
+Class 0: 0.8367	Class 1: 0.8668	
+
+Overall accuracy: 0.8692.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxoooooooooooooooooooooooooxooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooxoooooxooooooooooooooooxooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.003,eta2:0.003,eta3:0.010,eta4:0.010, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	24
+1	27	168
+Micro F1:
+Class 0: 0.8702	Class 1: 0.8682	
+Macro F1:
+Class 0: 0.8367	Class 1: 0.8668	
+
+Overall accuracy: 0.8692.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxoooooooxoooooooooooooooooooooooxoooooooooooooxoooooooooooooooooooooooooooooooooooooo
+ooooooxoooooooooooooooxooooooooooooooooxooooxoooooooooooooooooooxoooooooooxoooooooooooooxoooooooooxo
+oooooooooooooxoooooxooooxoooooxoooooooooxoooooooooooooxoooooooooooooooooooooxooooooooooooooooooooooo
+oooooooxooooooooooooxoooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.004,eta2:0.004,eta3:0.001,eta4:0.001, personalized:true]
+Micro confusion matrix:
+	0	1
+0	170	30
+1	28	162
+Micro F1:
+Class 0: 0.8543	Class 1: 0.8482	
+Macro F1:
+Class 0: 0.8198	Class 1: 0.8452	
+
+Overall accuracy: 0.8513.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+ooxooooooooxoooooooooooooooooooooxooooooooooooooooooooooooooooooooooooooooooooxooooooooooooxoooooxoo
+ooooooooooooooooxoooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.004,eta2:0.004,eta3:0.002,eta4:0.002, personalized:true]
+Micro confusion matrix:
+	0	1
+0	170	28
+1	28	164
+Micro F1:
+Class 0: 0.8586	Class 1: 0.8542	
+Macro F1:
+Class 0: 0.8234	Class 1: 0.8533	
+
+Overall accuracy: 0.8564.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooxooooooooxoooooooooooooooxooooxooooooooxooooooooooxoooooooooooooooxooooooooxoooo
+xoooooooooooooooxoooooooooooooooooxoooooooooxooooooooooooooooooooooooxoooooooxoooooooooooooooooooooo
+ooooooooooxoo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.004,eta2:0.004,eta3:0.003,eta4:0.003, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	26
+1	27	166
+Micro F1:
+Class 0: 0.8658	Class 1: 0.8623	
+Macro F1:
+Class 0: 0.8317	Class 1: 0.8614	
+
+Overall accuracy: 0.8641.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxoooooooooooooxoooooooooooooooooooooooooxoooooooooooooooooooooooooooooooxoooooooooooo
+oooooooooooooooooxooooooooooooooooooooooooooooooooooooooxooooooooooooxoooooooooooooooooooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.004,eta2:0.004,eta3:0.004,eta4:0.004, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	25
+1	27	167
+Micro F1:
+Class 0: 0.8680	Class 1: 0.8653	
+Macro F1:
+Class 0: 0.8349	Class 1: 0.8633	
+
+Overall accuracy: 0.8667.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxoooooooooooooooooooooooxoooooooooooooooooooooooooooooxoooooooooxoooooooooooooooooooo
+oooooooooxooooooooxooooooooooooxoooooooooooooooooooooooooooooooooooooxooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.004,eta2:0.004,eta3:0.005,eta4:0.005, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	25
+1	27	167
+Micro F1:
+Class 0: 0.8680	Class 1: 0.8653	
+Macro F1:
+Class 0: 0.8349	Class 1: 0.8633	
+
+Overall accuracy: 0.8667.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxoooooooooxooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooxoooo
+oooooooooooooooooooxoooooooooxoooooxooooxooooooxoooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.004,eta2:0.004,eta3:0.006,eta4:0.006, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	25
+1	27	167
+Micro F1:
+Class 0: 0.8680	Class 1: 0.8653	
+Macro F1:
+Class 0: 0.8349	Class 1: 0.8633	
+
+Overall accuracy: 0.8667.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxooooxoooooooooooooooooooooooooxoooooooooxooooooooxooooooooooooooooooooooooo
+ooooxoooooooooooooooooooooooooxoooooooooooxoooooooooooooooxooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.004,eta2:0.004,eta3:0.007,eta4:0.007, personalized:true]
+Micro confusion matrix:
+	0	1
+0	170	25
+1	28	167
+Micro F1:
+Class 0: 0.8651	Class 1: 0.8630	
+Macro F1:
+Class 0: 0.8323	Class 1: 0.8608	
+
+Overall accuracy: 0.8641.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxooooxoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooxoooooooooo
+ooxoooooooooooooooooxoooooooooooooooooooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.004,eta2:0.004,eta3:0.008,eta4:0.008, personalized:true]
+Micro confusion matrix:
+	0	1
+0	170	25
+1	28	167
+Micro F1:
+Class 0: 0.8651	Class 1: 0.8630	
+Macro F1:
+Class 0: 0.8323	Class 1: 0.8608	
+
+Overall accuracy: 0.8641.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxoooooooooxooooooooooooooooooooooooooooooxoooooooooooooxoooooxooooxooooooooo
+oxooooooooooooooxoooooooooooooooooooooooxoooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.004,eta2:0.004,eta3:0.009,eta4:0.009, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	24
+1	27	168
+Micro F1:
+Class 0: 0.8702	Class 1: 0.8682	
+Macro F1:
+Class 0: 0.8431	Class 1: 0.8657	
+
+Overall accuracy: 0.8692.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxoooooooooxoooooooooxoooooooooooooooooooooxoooooooooxooooooooooooooooooooooo
+ooooxoooooxooooxoooooooooooooooooooxooooooooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.004,eta2:0.004,eta3:0.010,eta4:0.010, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	24
+1	27	168
+Micro F1:
+Class 0: 0.8702	Class 1: 0.8682	
+Macro F1:
+Class 0: 0.8431	Class 1: 0.8657	
+
+Overall accuracy: 0.8692.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxoooooooxooooooooooooooxoooooooooooooooooooooooooooooooxooooooooooooooooooooooooooooo
+oooooooooooxooooooooxooooooooooooooxoooooooooooooooooooooxooooooooooooooooooooooooooooooxooooooooooo
+ooooooooooooooooooooxooooxoooooooooxoooooooooxoooooooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.005,eta2:0.005,eta3:0.001,eta4:0.001, personalized:true]
+Micro confusion matrix:
+	0	1
+0	170	29
+1	28	163
+Micro F1:
+Class 0: 0.8564	Class 1: 0.8512	
+Macro F1:
+Class 0: 0.8217	Class 1: 0.8487	
+
+Overall accuracy: 0.8538.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooooooxooooooooooooooooooooooooooooooooooooooooooooooooooooxoooooooooooooooooo
+ooxooooooooooooxoooooooooooooooooooooooooooooooooooooooooooxooooooooooooooooooxoooooooooxoooooxooooo
+oooooooooooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.005,eta2:0.005,eta3:0.002,eta4:0.002, personalized:true]
+Micro confusion matrix:
+	0	1
+0	170	26
+1	28	166
+Micro F1:
+Class 0: 0.8629	Class 1: 0.8601	
+Macro F1:
+Class 0: 0.8292	Class 1: 0.8589	
+
+Overall accuracy: 0.8615.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooooooooooooooooooooooooooooooooooxoooooooooooooooooooooooooooxooooooxooooooox
+ooooooooooooooooooooooxoooooooooooooooxooooooooooooooooxoooooxoooooxoooooooooooxoooooooooxooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.005,eta2:0.005,eta3:0.003,eta4:0.003, personalized:true]
+Micro confusion matrix:
+	0	1
+0	170	25
+1	28	167
+Micro F1:
+Class 0: 0.8651	Class 1: 0.8630	
+Macro F1:
+Class 0: 0.8323	Class 1: 0.8608	
+
+Overall accuracy: 0.8641.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooooooooooooooooxoooooooooooooooooxooooooooooooooooooooooooooooooooooooooooooo
+oooooooooxooooooooooooooooooooooooooooxooooxooooooooooooooooooooooooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.005,eta2:0.005,eta3:0.004,eta4:0.004, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	25
+1	27	167
+Micro F1:
+Class 0: 0.8680	Class 1: 0.8653	
+Macro F1:
+Class 0: 0.8412	Class 1: 0.8622	
+
+Overall accuracy: 0.8667.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxoooooooooxooooooooooooooooooooooooooooooooxoooooooooxoooooooooxoooooooooooo
+oooooooooooooooooxooooooooooooxooooooooooooooooooooooooooooxooooooooooooooooooooxooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.005,eta2:0.005,eta3:0.005,eta4:0.005, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	25
+1	27	167
+Micro F1:
+Class 0: 0.8680	Class 1: 0.8653	
+Macro F1:
+Class 0: 0.8412	Class 1: 0.8622	
+
+Overall accuracy: 0.8667.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxooooxooooooooooooooooooooooooooxoooooooooxoooooooooooooooooxooooooooooooooo
+oooooooooooooooooooxoooooooxooooooxooooooooooooooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.005,eta2:0.005,eta3:0.006,eta4:0.006, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	25
+1	27	167
+Micro F1:
+Class 0: 0.8680	Class 1: 0.8653	
+Macro F1:
+Class 0: 0.8412	Class 1: 0.8622	
+
+Overall accuracy: 0.8667.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxooooxooooooooooooooooxoooooooooxooooooooooooooooooooooooooooooooooooooooooo
+oooxooooooooooooooooooooooooooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.005,eta2:0.005,eta3:0.007,eta4:0.007, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	25
+1	27	167
+Micro F1:
+Class 0: 0.8680	Class 1: 0.8653	
+Macro F1:
+Class 0: 0.8412	Class 1: 0.8622	
+
+Overall accuracy: 0.8667.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxooooxoooooooooooooooooooooooxooooooooooooooooooxooooooooooooooooxoooooooooo
+xoooooooooxoooooooooooooooooooooooooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.005,eta2:0.005,eta3:0.008,eta4:0.008, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	24
+1	27	168
+Micro F1:
+Class 0: 0.8702	Class 1: 0.8682	
+Macro F1:
+Class 0: 0.8431	Class 1: 0.8657	
+
+Overall accuracy: 0.8692.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxoooooooooooooooooooooooooooooxooooooooooooooxooooooooooooooxooooooooooooooo
+ooooooooooooxoooooooooxoooooooooooooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.005,eta2:0.005,eta3:0.009,eta4:0.009, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	24
+1	27	168
+Micro F1:
+Class 0: 0.8702	Class 1: 0.8682	
+Macro F1:
+Class 0: 0.8431	Class 1: 0.8657	
+
+Overall accuracy: 0.8692.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooxooooox
+oooooooooooooooooooooooooooooxoooooxooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.005,eta2:0.005,eta3:0.010,eta4:0.010, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	24
+1	27	168
+Micro F1:
+Class 0: 0.8702	Class 1: 0.8682	
+Macro F1:
+Class 0: 0.8431	Class 1: 0.8657	
+
+Overall accuracy: 0.8692.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxooooxoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+xoooooooooooooooooooxoooooooooooooxooooxoooooooooooxooooooooooooooxoooooooooooooxooooooooooooooooooo
+ooxoooooxooooooooooooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.006,eta2:0.006,eta3:0.001,eta4:0.001, personalized:true]
+Micro confusion matrix:
+	0	1
+0	169	29
+1	29	163
+Micro F1:
+Class 0: 0.8535	Class 1: 0.8490	
+Macro F1:
+Class 0: 0.8192	Class 1: 0.8462	
+
+Overall accuracy: 0.8513.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxooooooooooooooooooooooooooooxooooooooooooxoooooooooooooooooooooooooxooooooo
+ooooooooooooooooooooooooooooooooooooooxoooooooooooooooooooooooooxoooooooooooooooooooooooooooxooooooo
+
+MT-LinAdapt[dim:9, supDim:9, eta1:0.006,eta2:0.006,eta3:0.002,eta4:0.002, personalized:true]
+Micro confusion matrix:
+	0	1
+0	170	25
+1	28	167
+Micro F1:
+Class 0: 0.8651	Class 1: 0.8630	
+Macro F1:
+Class 0: 0.8323	Class 1: 0.8608	
+
+Overall accuracy: 0.8641.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxooooooooooooooooooooooooooooooooooooooxoooooooxoooooooooxoooooooooooooooooo
+oooooooooooooxooooooooooooooooooooooooooooxoooooooxooooooooooooooooooooooooxooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.006,eta2:0.006,eta3:0.003,eta4:0.003, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	25
+1	27	167
+Micro F1:
+Class 0: 0.8680	Class 1: 0.8653	
+Macro F1:
+Class 0: 0.8412	Class 1: 0.8622	
+
+Overall accuracy: 0.8667.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxooooooooooooooooxoooooooooooooxooooooooooooooooxooooooooooooooooooxoooooooo
+ooooooooooooooxoooooooooooooooooooooxoooooooooxooooooooooooooooxooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.006,eta2:0.006,eta3:0.004,eta4:0.004, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	25
+1	27	167
+Micro F1:
+Class 0: 0.8680	Class 1: 0.8653	
+Macro F1:
+Class 0: 0.8412	Class 1: 0.8622	
+
+Overall accuracy: 0.8667.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxoooooooooxooooooooooooxoooooooooxoooooooxooooooooooooooooooxooooooooooooxoo
+oooxoooooooooooooooooxooooooooooooooooooooooooooxoooooxoo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.006,eta2:0.006,eta3:0.005,eta4:0.005, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	25
+1	27	167
+Micro F1:
+Class 0: 0.8680	Class 1: 0.8653	
+Macro F1:
+Class 0: 0.8412	Class 1: 0.8622	
+
+Overall accuracy: 0.8667.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxooooxoooooooooooooooooooooooooooxooooooooooooooooooooooooooooooooooxooooooo
+oooooxoooooooooxoooooooooooooooooooooooooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.006,eta2:0.006,eta3:0.006,eta4:0.006, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	25
+1	27	167
+Micro F1:
+Class 0: 0.8680	Class 1: 0.8653	
+Macro F1:
+Class 0: 0.8412	Class 1: 0.8622	
+
+Overall accuracy: 0.8667.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxooooxooooooooooooooooxoooooooooxoooooooooooooooooooooxoooooooooooooooooooxo
+oooooooooooooooooooooooooooooxoooooooxoooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.006,eta2:0.006,eta3:0.007,eta4:0.007, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	25
+1	27	167
+Micro F1:
+Class 0: 0.8680	Class 1: 0.8653	
+Macro F1:
+Class 0: 0.8412	Class 1: 0.8622	
+
+Overall accuracy: 0.8667.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxooooooooooooooooooooooooooooooooooooooooxooooooooooooxooooooooooooooooooooo
+oooooooooooooxoooooooooooooooooooxoooooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.006,eta2:0.006,eta3:0.008,eta4:0.008, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	25
+1	27	167
+Micro F1:
+Class 0: 0.8680	Class 1: 0.8653	
+Macro F1:
+Class 0: 0.8412	Class 1: 0.8622	
+
+Overall accuracy: 0.8667.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxoooooooooxoooooooooooooxooooooooooxoooooxooooooooooooooooooxoooxooooooooooo
+oooooooooooooooxooooooooxooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.006,eta2:0.006,eta3:0.009,eta4:0.009, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	25
+1	27	167
+Micro F1:
+Class 0: 0.8680	Class 1: 0.8653	
+Macro F1:
+Class 0: 0.8412	Class 1: 0.8622	
+
+Overall accuracy: 0.8667.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxooooooooooooooooooxoooooooooooooxooooxoooooooooooooxoooooooooooooxooooooooo
+ooooxooooxoooooooooxoooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.006,eta2:0.006,eta3:0.010,eta4:0.010, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	24
+1	27	168
+Micro F1:
+Class 0: 0.8702	Class 1: 0.8682	
+Macro F1:
+Class 0: 0.8431	Class 1: 0.8657	
+
+Overall accuracy: 0.8692.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxooooooooooooxooooooooooooxoooooooooooooooooooooooooooooooooxooooooooooooooo
+oooooooooooooxoooooooooooooooooxooooooooooooooooooooxoooooxooooooooooooooxoooooooooxoooooxoooooooooo
+ooooooooooooooooooooooooooxoooooooooxooooooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.007,eta2:0.007,eta3:0.001,eta4:0.001, personalized:true]
+Micro confusion matrix:
+	0	1
+0	170	26
+1	28	166
+Micro F1:
+Class 0: 0.8629	Class 1: 0.8601	
+Macro F1:
+Class 0: 0.8306	Class 1: 0.8562	
+
+Overall accuracy: 0.8615.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxoooooooooooooxooooooooooooxoooooooooooooooooooxoooooooooooooooooxoooooooooo
+ooooooooooooooooooooooooooxoooooooooooooooooooooooooooxoooooooooooooooooooooooooooxooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.007,eta2:0.007,eta3:0.002,eta4:0.002, personalized:true]
+Micro confusion matrix:
+	0	1
+0	170	26
+1	28	166
+Micro F1:
+Class 0: 0.8629	Class 1: 0.8601	
+Macro F1:
+Class 0: 0.8361	Class 1: 0.8571	
+
+Overall accuracy: 0.8615.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxoooooooooooooooooooooooooooooooooooooooooooooooooooooooooxooooooooooooooooo
+oooooooooooooxooooooooxooooooooooxooooooooooooooooooooooooooooooooooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.007,eta2:0.007,eta3:0.003,eta4:0.003, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	26
+1	27	166
+Micro F1:
+Class 0: 0.8658	Class 1: 0.8623	
+Macro F1:
+Class 0: 0.8390	Class 1: 0.8592	
+
+Overall accuracy: 0.8641.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxoooooooooxoooooooooooooooxooooooooooooooooooooooooooooooooooxoooooooooooooo
+xoooooooooooooooooooooooooooxoooooooooooooooooooooooxooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.007,eta2:0.007,eta3:0.004,eta4:0.004, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	26
+1	27	166
+Micro F1:
+Class 0: 0.8658	Class 1: 0.8623	
+Macro F1:
+Class 0: 0.8390	Class 1: 0.8592	
+
+Overall accuracy: 0.8641.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxooooxooooooooooooooooooooooooooooooooooooxoooooooooxooooooooooooooooxoooooo
+ooooooxooooooooooooooooooooooooooooooooxooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.007,eta2:0.007,eta3:0.005,eta4:0.005, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	25
+1	27	167
+Micro F1:
+Class 0: 0.8680	Class 1: 0.8653	
+Macro F1:
+Class 0: 0.8412	Class 1: 0.8622	
+
+Overall accuracy: 0.8667.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxooooxoooooooooooooooooooooooooooxoooooooxoooooooooooooooooooooooxooooooooxo
+oooooooooooxoooooooooxooooooooooooooooooooooxooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.007,eta2:0.007,eta3:0.006,eta4:0.006, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	25
+1	27	167
+Micro F1:
+Class 0: 0.8680	Class 1: 0.8653	
+Macro F1:
+Class 0: 0.8412	Class 1: 0.8622	
+
+Overall accuracy: 0.8667.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxoooooooooooooooooooooooooooooooooooooxooooooooxooooooooooooooooooooooooxooo
+ooooooooooooxoooooooooooooooooooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.007,eta2:0.007,eta3:0.007,eta4:0.007, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	25
+1	27	167
+Micro F1:
+Class 0: 0.8680	Class 1: 0.8653	
+Macro F1:
+Class 0: 0.8412	Class 1: 0.8622	
+
+Overall accuracy: 0.8667.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxoooooooooxooooooooooooooooooooooooooooxooooooooooooooooooooooooooxooooooooo
+oooooooooooooooooooooooooxooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.007,eta2:0.007,eta3:0.008,eta4:0.008, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	25
+1	27	167
+Micro F1:
+Class 0: 0.8680	Class 1: 0.8653	
+Macro F1:
+Class 0: 0.8412	Class 1: 0.8622	
+
+Overall accuracy: 0.8667.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxooooooooooooooooooooooooooxoooooooooooooooooooooooooooooooooooooooooooooxoo
+oooooooooooooooxoooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.007,eta2:0.007,eta3:0.009,eta4:0.009, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	22
+1	27	170
+Micro F1:
+Class 0: 0.8747	Class 1: 0.8740	
+Macro F1:
+Class 0: 0.8482	Class 1: 0.8708	
+
+Overall accuracy: 0.8744.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxooooooooooxoooooooooooooooooxoooooooooooxooooooooooxooooooooooooooooooooooo
+oooooooooxoooxoooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.007,eta2:0.007,eta3:0.010,eta4:0.010, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	22
+1	27	170
+Micro F1:
+Class 0: 0.8747	Class 1: 0.8740	
+Macro F1:
+Class 0: 0.8482	Class 1: 0.8708	
+
+Overall accuracy: 0.8744.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooxoooooooooooooooooooooooooxooooooooooooooooooooooooxooooooooooooooooooooooooooooxooooo
+ooooooooooooxoooooxoooooooooxoooooooooxooooooooooooooxooooooooooooooxooooooooooooooooooooooooooooooo
+ooooxoooooooooooooooooooooooooooooxoooooooooooooooooooooooxoooooooooxoooooxoooooooooooooooooooooooxo
+ooooooooxooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.008,eta2:0.008,eta3:0.001,eta4:0.001, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	27
+1	27	165
+Micro F1:
+Class 0: 0.8636	Class 1: 0.8594	
+Macro F1:
+Class 0: 0.8334	Class 1: 0.8543	
+
+Overall accuracy: 0.8615.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxooooooooooooooooooooooooooxooooooooooooxooooooooooooooxoooooooooxoooooooooo
+ooooooooooooooooooxooooooooooooxoooooooooooooooooooooooooooooooooooooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.008,eta2:0.008,eta3:0.002,eta4:0.002, personalized:true]
+Micro confusion matrix:
+	0	1
+0	170	26
+1	28	166
+Micro F1:
+Class 0: 0.8629	Class 1: 0.8601	
+Macro F1:
+Class 0: 0.8361	Class 1: 0.8571	
+
+Overall accuracy: 0.8615.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxoooooooooooooooooxoooooooooooooooooooooooooxoooooooooxooooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooxoooooooooooxooooooooxooooooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.008,eta2:0.008,eta3:0.003,eta4:0.003, personalized:true]
+Micro confusion matrix:
+	0	1
+0	170	26
+1	28	166
+Micro F1:
+Class 0: 0.8629	Class 1: 0.8601	
+Macro F1:
+Class 0: 0.8361	Class 1: 0.8571	
+
+Overall accuracy: 0.8615.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxoooooooooooooooooooooooooooooooooxooooooooooooooooooooooooooxoooooooooxoooo
+ooooooooooooooooooooxooooooooooooooooooooooxoooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.008,eta2:0.008,eta3:0.004,eta4:0.004, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	26
+1	27	166
+Micro F1:
+Class 0: 0.8658	Class 1: 0.8623	
+Macro F1:
+Class 0: 0.8390	Class 1: 0.8592	
+
+Overall accuracy: 0.8641.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooxoooo
+ooooooooxooooooooooooooooooooooooooooooooooooooxooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.008,eta2:0.008,eta3:0.005,eta4:0.005, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	25
+1	27	167
+Micro F1:
+Class 0: 0.8680	Class 1: 0.8653	
+Macro F1:
+Class 0: 0.8409	Class 1: 0.8627	
+
+Overall accuracy: 0.8667.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxooooooooooooooooxoooooooooooooooooooooooooooooooooooooooooooooxoooooooooooo
+oooooooooxoooooooooooxoooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.008,eta2:0.008,eta3:0.006,eta4:0.006, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	25
+1	27	167
+Micro F1:
+Class 0: 0.8680	Class 1: 0.8653	
+Macro F1:
+Class 0: 0.8409	Class 1: 0.8627	
+
+Overall accuracy: 0.8667.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxoooooooooxoooooooooooooxooooooooooooooooooooooooooooooooxoooooooooooooxoooo
+ooooooooooooooooooooxooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.008,eta2:0.008,eta3:0.007,eta4:0.007, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	25
+1	27	167
+Micro F1:
+Class 0: 0.8680	Class 1: 0.8653	
+Macro F1:
+Class 0: 0.8409	Class 1: 0.8627	
+
+Overall accuracy: 0.8667.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxooooooooooooooooooooooooooooxooooxoooooooooooooooooooooooooooooooooooxooooo
+ooooooxoooooooooooooxoooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.008,eta2:0.008,eta3:0.008,eta4:0.008, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	24
+1	27	168
+Micro F1:
+Class 0: 0.8702	Class 1: 0.8682	
+Macro F1:
+Class 0: 0.8438	Class 1: 0.8649	
+
+Overall accuracy: 0.8692.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxooooooooooxooooooooooooooooooooooooxooooooooxooooooooooooooxoooooooooooooxo
+ooooooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.008,eta2:0.008,eta3:0.009,eta4:0.009, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	24
+1	27	168
+Micro F1:
+Class 0: 0.8702	Class 1: 0.8682	
+Macro F1:
+Class 0: 0.8438	Class 1: 0.8649	
+
+Overall accuracy: 0.8692.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxoooooooooooooxoooooooooxoooooxoooooooooooooooooxoooooooooooooooooooooxooooo
+oooxoooooooooooooooooxooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.008,eta2:0.008,eta3:0.010,eta4:0.010, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	22
+1	27	170
+Micro F1:
+Class 0: 0.8747	Class 1: 0.8740	
+Macro F1:
+Class 0: 0.8482	Class 1: 0.8708	
+
+Overall accuracy: 0.8744.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxoooooooooooooooooooooxooooooooooooooooooooooooooxoooooooooooooooooooooooooo
+ooooooooooooooooooooooooooxoooooooooooooooooooooooooooooooxoooooooooxooooooooooooooooooooooooooooooo
+oooooooooooooxooooooooooooooooooooooooxooooxoooooooooooooxoooooooooooooxoooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooxooooooooooooooooooooooooooxooooooooooooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.009,eta2:0.009,eta3:0.001,eta4:0.001, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	27
+1	27	165
+Micro F1:
+Class 0: 0.8636	Class 1: 0.8594	
+Macro F1:
+Class 0: 0.8322	Class 1: 0.8567	
+
+Overall accuracy: 0.8615.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxoooooooooooooooooxooooooooooooooooooooooooxoooooooooooooxoooooooooxoooooooo
+oooooxoooooooooooooooooooooooooooooooxooooooooooooxooooooooooooooooooooooooooooooxooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.009,eta2:0.009,eta3:0.002,eta4:0.002, personalized:true]
+Micro confusion matrix:
+	0	1
+0	170	26
+1	28	166
+Micro F1:
+Class 0: 0.8629	Class 1: 0.8601	
+Macro F1:
+Class 0: 0.8361	Class 1: 0.8571	
+
+Overall accuracy: 0.8615.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxoooooooooooooooooooooooooooooooooooooooooxooooooooooooooooooooooooooooooooo
+oooooooooooooooxoooooooooooooooooooooooooooooooxoooooooooxooooooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.009,eta2:0.009,eta3:0.003,eta4:0.003, personalized:true]
+Micro confusion matrix:
+	0	1
+0	170	26
+1	28	166
+Micro F1:
+Class 0: 0.8629	Class 1: 0.8601	
+Macro F1:
+Class 0: 0.8361	Class 1: 0.8571	
+
+Overall accuracy: 0.8615.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxooooooooooooooooooooooooooooooxoooooooooooooooooooooooooooooooooooooooooooo
+xoooooooooxoooooooooooxooooxoooooooooooooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.009,eta2:0.009,eta3:0.004,eta4:0.004, personalized:true]
+Micro confusion matrix:
+	0	1
+0	170	25
+1	28	167
+Micro F1:
+Class 0: 0.8651	Class 1: 0.8630	
+Macro F1:
+Class 0: 0.8379	Class 1: 0.8605	
+
+Overall accuracy: 0.8641.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxooooooooooooooooxooooooooooooooxooooooooooooooooooooooooooooooxoooooooooooo
+ooooooooooooooooooooooooooooooxoooooxooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.009,eta2:0.009,eta3:0.005,eta4:0.005, personalized:true]
+Micro confusion matrix:
+	0	1
+0	170	25
+1	28	167
+Micro F1:
+Class 0: 0.8651	Class 1: 0.8630	
+Macro F1:
+Class 0: 0.8379	Class 1: 0.8605	
+
+Overall accuracy: 0.8641.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxoooooooooxoooooooooooooxoooooxoooooooooooooooooooxooooooooooooooxooooxoooxo
+ooooooooooooooooooooooxoooooooooxooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.009,eta2:0.009,eta3:0.006,eta4:0.006, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	24
+1	27	168
+Micro F1:
+Class 0: 0.8702	Class 1: 0.8682	
+Macro F1:
+Class 0: 0.8438	Class 1: 0.8649	
+
+Overall accuracy: 0.8692.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxoooooooooxooooooooooooooooooooooooooooxoooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooxoooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.009,eta2:0.009,eta3:0.007,eta4:0.007, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	24
+1	27	168
+Micro F1:
+Class 0: 0.8702	Class 1: 0.8682	
+Macro F1:
+Class 0: 0.8438	Class 1: 0.8649	
+
+Overall accuracy: 0.8692.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxooooooooooooooooooooooooooooooooxoooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.009,eta2:0.009,eta3:0.008,eta4:0.008, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	24
+1	27	168
+Micro F1:
+Class 0: 0.8702	Class 1: 0.8682	
+Macro F1:
+Class 0: 0.8438	Class 1: 0.8649	
+
+Overall accuracy: 0.8692.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxoooooooooooooxooooooooooooooooooxoooooooxoooooooooooooooooooooooooooooooooo
+ooooooooooooxooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.009,eta2:0.009,eta3:0.009,eta4:0.009, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	25
+1	27	167
+Micro F1:
+Class 0: 0.8680	Class 1: 0.8653	
+Macro F1:
+Class 0: 0.8421	Class 1: 0.8602	
+
+Overall accuracy: 0.8667.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxoooxooooooooooooooooooooooooooooooooooooooooooooooooooooooooxoooooooxooooxo
+oooooooooxooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.009,eta2:0.009,eta3:0.010,eta4:0.010, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	24
+1	27	168
+Micro F1:
+Class 0: 0.8702	Class 1: 0.8682	
+Macro F1:
+Class 0: 0.8442	Class 1: 0.8632	
+
+Overall accuracy: 0.8692.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxooooooooooooooooooooooxoooooooooooooooooooooooooooooooooooooooooooooooooooo
+ooxooooooooooooooooooooooooooooxoooooooooooooooooooooooooooooooooooxoooooooooxooooooooxoooooxooooooo
+ooooooooooooooxooooooooooooooxooooooooooooooooooooooooxoooooooooooooooooooooooooooooooooooooxooooooo
+ooooooxooooxoooooooooxoooooxoooooooooooooooooooooooooxooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.010,eta2:0.010,eta3:0.001,eta4:0.001, personalized:true]
+Micro confusion matrix:
+	0	1
+0	170	27
+1	28	165
+Micro F1:
+Class 0: 0.8608	Class 1: 0.8571	
+Macro F1:
+Class 0: 0.8293	Class 1: 0.8546	
+
+Overall accuracy: 0.8590.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxoooooooooooooooooooooooooooooooooooxoooooooooooooooooooooooooxoooooooooxooo
+ooooooooooooooooooooooooooxoooooooooooooooooooooooooooooooooooooooxooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.010,eta2:0.010,eta3:0.002,eta4:0.002, personalized:true]
+Micro confusion matrix:
+	0	1
+0	170	26
+1	28	166
+Micro F1:
+Class 0: 0.8629	Class 1: 0.8601	
+Macro F1:
+Class 0: 0.8361	Class 1: 0.8571	
+
+Overall accuracy: 0.8615.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxooooooooooooooooooooooooooooooooooooooxoooooooooooooooooooooooooooooxoooooo
+oooxooooooooooooxoooooooooooooooxooooooooooooxoooooxooooooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.010,eta2:0.010,eta3:0.003,eta4:0.003, personalized:true]
+Micro confusion matrix:
+	0	1
+0	170	26
+1	28	166
+Micro F1:
+Class 0: 0.8629	Class 1: 0.8601	
+Macro F1:
+Class 0: 0.8361	Class 1: 0.8571	
+
+Overall accuracy: 0.8615.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxoooooooooooooooooooooooooooooooxooooooooooooooooooxoooooooooooooxooooxooooo
+oooooooooooooooxoooooxooooooooooooooooooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.010,eta2:0.010,eta3:0.004,eta4:0.004, personalized:true]
+Micro confusion matrix:
+	0	1
+0	170	25
+1	28	167
+Micro F1:
+Class 0: 0.8651	Class 1: 0.8630	
+Macro F1:
+Class 0: 0.8379	Class 1: 0.8605	
+
+Overall accuracy: 0.8641.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxoooooooooxoooooooooooooooooooooooooooxooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.010,eta2:0.010,eta3:0.005,eta4:0.005, personalized:true]
+Micro confusion matrix:
+	0	1
+0	170	24
+1	28	168
+Micro F1:
+Class 0: 0.8673	Class 1: 0.8660	
+Macro F1:
+Class 0: 0.8409	Class 1: 0.8627	
+
+Overall accuracy: 0.8667.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxoooooooooxooooooooooooooooooooooooooxooooooooxooooooooooooooooooooooooooooo
+xooooooooooooxoooooooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.010,eta2:0.010,eta3:0.006,eta4:0.006, personalized:true]
+Micro confusion matrix:
+	0	1
+0	170	24
+1	28	168
+Micro F1:
+Class 0: 0.8673	Class 1: 0.8660	
+Macro F1:
+Class 0: 0.8409	Class 1: 0.8627	
+
+Overall accuracy: 0.8667.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxoooooooooooooooooooooooooooxooooooooooooooooooxooooooooooooooxooooooooooooo
+ooooxoooooooooooooxooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.010,eta2:0.010,eta3:0.007,eta4:0.007, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	24
+1	27	168
+Micro F1:
+Class 0: 0.8702	Class 1: 0.8682	
+Macro F1:
+Class 0: 0.8438	Class 1: 0.8649	
+
+Overall accuracy: 0.8692.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooxooooooooxooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooxoooooooooooo
+ooooooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.010,eta2:0.010,eta3:0.008,eta4:0.008, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	25
+1	27	167
+Micro F1:
+Class 0: 0.8680	Class 1: 0.8653	
+Macro F1:
+Class 0: 0.8421	Class 1: 0.8602	
+
+Overall accuracy: 0.8667.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxoooooooooooooooooooooooooooooooooooxooooooooooooooxooooooooooooxooooooooooooooooooooooxooo
+oooooooooxoooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.010,eta2:0.010,eta3:0.009,eta4:0.009, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	25
+1	27	167
+Micro F1:
+Class 0: 0.8680	Class 1: 0.8653	
+Macro F1:
+Class 0: 0.8421	Class 1: 0.8602	
+
+Overall accuracy: 0.8667.
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 1500(0.51), and testing size: 390(0.49)
+oxoooooooxooooooooooooooooooooooxooooooooooooooooooooooooooooooooooooxooooooooooooooooooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.010,eta2:0.010,eta3:0.010,eta4:0.010, personalized:true]
+Micro confusion matrix:
+	0	1
+0	171	24
+1	27	168
+Micro F1:
+Class 0: 0.8702	Class 1: 0.8682	
+Macro F1:
+Class 0: 0.8442	Class 1: 0.8632	
+
+Overall accuracy: 0.8692.

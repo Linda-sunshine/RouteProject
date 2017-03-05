@@ -1,0 +1,72 @@
+Individual-SVM[C:0.100,bias:false]
+Micro confusion matrix:
+	0	1
+0	134	66
+1	229	251
+Micro F1:
+Class 0: 0.4760	Class 1: 0.6299	
+Macro F1:
+Class 0: 0.4698	Class 1: 0.6274	
+
+Overall accuracy: 0.5662.
+
+===========================
+[Info]Training size: 0(0.00), adaptation size: 2560(0.46), and testing size: 680(0.47)
+.................................................................*
+optimization finished, #iter = 654
+Objective value = -5381.31
+nSV = 1239
+Global-SVM[C:1.000,bias:true]
+Micro confusion matrix:
+	0	1
+0	306	54
+1	57	263
+Micro F1:
+Class 0: 0.8465	Class 1: 0.8257	
+Macro F1:
+Class 0: 0.8470	Class 1: 0.8205	
+
+Overall accuracy: 0.8368.
+
+===========================
+40 users are loaded from ./data/Dataset1/Format2/...
+[Info]Training size: 0(0.00), adaptation size: 2560(0.46), and testing size: 680(0.47)
+oooooooooooooooooooooooxoooooooooooooooooooooxoooooooooooooooxoooooooooooooooooooxoooooooooooooooooo
+xoooooxoooxoooooooooxooooooooooooooooooooooooooooooooooooooooooooooooooxoooxoooooooooooooxoooxoooooo
+oooooooooooooooooooooooooooooooooooooooooxoooxooooooooooooooxoooooooooooxoooooooooxooooooooooooooooo
+oooooooooooooooooooooooooooooooooxooooooooooooooooooooxooooooooooooooooooxooooxooooooooooooooooooooo
+ooooooxoooooooooooooooooooooooooooooooooooooooooooxoooooooooxoooooooooooooooooooooooxooooooooooooooo
+oooooooooooxoooooxooooooooooooooooooxoooooooooooooxoooooooooooooooooooooooooooooooooooooooxooooooooo
+ooooooooooooooooooooooooooxoooxoooooooooooooooooooooooooooooooxoooxooooooooooooooooooooooooooxoooooo
+ooooooooxoooooooooooooxooooooooooooooooooooooooooooooxooooooooooooooooooooxoooooooooooooooooooooooxo
+ooooooooooooooo
+MTRegLR[u:1.00,eta1:0.010]
+Micro confusion matrix:
+	0	1
+0	324	38
+1	39	279
+Micro F1:
+Class 0: 0.8938	Class 1: 0.8787	
+Macro F1:
+Class 0: 0.8921	Class 1: 0.8723	
+
+Overall accuracy: 0.8868.
+
+===========================
+40 users are loaded from ./data/Dataset1/Format2/...
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 2560(0.46), and testing size: 680(0.47)
+oxooooooooxooooooooooooooooooooooxooooooooxooooooooooooooooooooooooooooooooooooooooxoooooooooxooooxo
+oooxooooooooooooxooooooooooooooxooooxoooooxoooooooooxoooooooooxooooooooooooooooooooooooooooooooooooo
+ooxoooooooooooooooooooooooooooxooooooooxoooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:1.100,eta2:1.100,eta3:1.100,eta4:1.100, personalized:true]
+Micro confusion matrix:
+	0	1
+0	334	37
+1	29	280
+Micro F1:
+Class 0: 0.9101	Class 1: 0.8946	
+Macro F1:
+Class 0: 0.9084	Class 1: 0.8886	
+
+Overall accuracy: 0.9029.

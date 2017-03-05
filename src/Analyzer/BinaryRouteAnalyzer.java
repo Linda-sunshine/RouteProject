@@ -6,6 +6,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -27,8 +28,47 @@ public class BinaryRouteAnalyzer extends UserAnalyzer {
 		super(tokenModel, classNo, providedCV, Ngram, threshold);
 	}
 
+//	@Override
+//	// Previous function used for loading users, one user has different feature sets with others.
+//	// Treat them differently.
+//	public void loadUser(String filename){
+//		try {
+//			File file = new File(filename);
+//			BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(file), "UTF-8"));
+//			String line;			
+//			String userID = extractUserID(file.getName()); //UserId is contained in the filename.
+//			// Skip the first line since it is not instances.
+//			reader.readLine(); 
+//			
+//			int ylabel;	
+//			String[] strs;
+//			_Review review;
+//			ArrayList<_Review> reviews = new ArrayList<_Review>();
+//			while((line = reader.readLine()) != null){
+//				strs = line.split("\\s+");
+//				if(strs.length == 15){
+//					// Construct the new review.
+//					ylabel = Integer.valueOf(strs[14]);
+//					review = new _Review(m_corpus.getCollection().size(), line, ylabel);
+//					AnalyzeDoc(review);
+//					reviews.add(review);
+//					m_corpus.addDoc(review);
+//					m_classMemberNo[ylabel]++;
+//				}
+//			}
+//			if(userID.equals("24"))
+//				allocateReviews(reviews, m_oneIndexes);
+//			else
+//				allocateReviews(reviews, m_mostIndexes);			
+//			m_users.add(new _User(userID, m_classNo, reviews)); //create new user from the file.
+//			reader.close();
+//		} catch(IOException e){
+//			e.printStackTrace();
+//		}
+//	}
+	
+	
 	@Override
-	// Load one file as a user here. 
 	public void loadUser(String filename){
 		try {
 			File file = new File(filename);
@@ -36,7 +76,7 @@ public class BinaryRouteAnalyzer extends UserAnalyzer {
 			String line;			
 			String userID = extractUserID(file.getName()); //UserId is contained in the filename.
 			// Skip the first line since it is not instances.
-			reader.readLine(); 
+//			reader.readLine(); 
 			
 			int ylabel;	
 			String[] strs;
@@ -44,9 +84,9 @@ public class BinaryRouteAnalyzer extends UserAnalyzer {
 			ArrayList<_Review> reviews = new ArrayList<_Review>();
 			while((line = reader.readLine()) != null){
 				strs = line.split("\\s+");
-				if(strs.length == 15){
+				if(strs.length == m_featureSize+1){
 					// Construct the new review.
-					ylabel = Integer.valueOf(strs[14]);
+					ylabel = Integer.valueOf(strs[m_featureSize]);
 					review = new _Review(m_corpus.getCollection().size(), line, ylabel);
 					AnalyzeDoc(review);
 					reviews.add(review);
@@ -54,30 +94,59 @@ public class BinaryRouteAnalyzer extends UserAnalyzer {
 					m_classMemberNo[ylabel]++;
 				}
 			}
-			if(userID.equals("24"))
-				allocateReviews(reviews, m_oneIndexes);
-			else
-				allocateReviews(reviews, m_mostIndexes);			
+			allocateReviews(reviews);
 			m_users.add(new _User(userID, m_classNo, reviews)); //create new user from the file.
 			reader.close();
 		} catch(IOException e){
 			e.printStackTrace();
 		}
 	}
-	
+
+//	PrintWriter writer;
+//	
+//	@Override
+//	public void loadUser(String filename){
+//		try {
+//			File file = new File(filename);
+//			BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(file), "UTF-8"));
+//			String line;			
+//			String userID = extractUserID(file.getName()); //UserId is contained in the filename.
+//			// Skip the first line since it is not instances.
+////			reader.readLine(); 
+//			
+//			ArrayList<String> samples = new ArrayList<String>();
+//			while((line = reader.readLine()) != null){
+//				samples.add(line);
+//			}
+//			reader.close();
+//			
+//			Collections.shuffle(samples);
+//			writer = new PrintWriter("./data/Dataset2Shuffle/"+userID+".txt");
+//			for(String s: samples)
+//				writer.write(s+"\n");
+//			writer.close();
+//		} catch(IOException e){
+//			e.printStackTrace();
+//		}
+//	}
 	/*Analyze a document and add the analyzed document back to corpus.*/
 	@Override
 	protected boolean AnalyzeDoc(_Doc review) {
 		String[] strs = review.getSource().split("\\s+");
-		_SparseFeature[] fvs = new _SparseFeature[strs.length-2];
+		_SparseFeature[] fvs = new _SparseFeature[strs.length-1];
 
-		for(int i=1; i<strs.length-1; i++)
-			fvs[i-1] = new _SparseFeature(i-1, Double.valueOf(strs[i]));
+		for(int i=0; i<strs.length-1; i++)
+			fvs[i] = new _SparseFeature(i, Double.valueOf(strs[i]));
 		review.setSpVct(fvs);
 		return true;
 	}
+	
+	protected int m_featureSize = 0;
+	public void setFeatureSize(int fs){
+		m_featureSize = fs;
+	}
 	public int getRouteFeatureSize(){
-		return 13;
+		return m_featureSize;
 	}
 	// Normalize
 	public void Normalize(int norm){
@@ -170,18 +239,20 @@ public class BinaryRouteAnalyzer extends UserAnalyzer {
 			e.printStackTrace();
 		}
 	}
-	//[0, train) for training purpose
-	//[train, adapt) for adaptation purpose
-	//[adapt, 1] for testing purpose
-	void allocateReviews(ArrayList<_Review> reviews, ArrayList<Integer> indexes) {
-		for(int i=0; i<reviews.size(); i++){
-			if(indexes.contains(i)){
-				reviews.get(i).setType(rType.ADAPTATION);
-				m_adaptSize ++;
-			} else {
-				reviews.get(i).setType(rType.TEST);
-				m_testSize ++;
-			}
-		}
-	}
+	
+	// Previously, we selected some of the reviews for adaptation and some of them for testing.
+//	//[0, train) for training purpose
+//	//[train, adapt) for adaptation purpose
+//	//[adapt, 1] for testing purpose
+//	void allocateReviews(ArrayList<_Review> reviews, ArrayList<Integer> indexes) {
+//		for(int i=0; i<reviews.size(); i++){
+//			if(indexes.contains(i)){
+//				reviews.get(i).setType(rType.ADAPTATION);
+//				m_adaptSize ++;
+//			} else {
+//				reviews.get(i).setType(rType.TEST);
+//				m_testSize ++;
+//			}
+//		}
+//	}
 }

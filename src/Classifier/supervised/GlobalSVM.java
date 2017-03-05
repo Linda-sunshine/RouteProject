@@ -1,6 +1,8 @@
 package Classifier.supervised;
 
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
@@ -95,6 +97,28 @@ public class GlobalSVM extends IndividualSVM{
 			writer.close();
 		} catch(IOException e){
 			e.printStackTrace();
+		}
+	}
+	
+	public void savePerf(String perfLocation) {
+		try {
+			BufferedWriter writer = new BufferedWriter(new FileWriter(perfLocation+"/allUsers.perf"));
+			for(_AdaptStruct user:m_userList) {
+	            StringBuilder buffer = new StringBuilder(512);
+	            buffer.append(user.getUserID()+"\t");
+//	            for(_Review r: user.getReviews()){
+//	            	if(r.getType() == rType.TEST)
+//	            }	
+	            for(int i=0; i<m_classNo; i++){
+	            	for(int j=0; j<m_classNo; j++)
+	            		buffer.append(user.getPerfStat().getEntry(i, j)+"\t");
+	            }
+	            buffer.append("\n");
+	            writer.write(buffer.toString());
+	        } 
+	        writer.close();
+		}catch (Exception e) {
+			e.printStackTrace();  
 		}
 	}
 }

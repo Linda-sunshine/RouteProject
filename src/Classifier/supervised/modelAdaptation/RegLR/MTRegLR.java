@@ -60,6 +60,9 @@ public class MTRegLR extends RegLR {
 		m_u = Math.sqrt(u);
 	}
 	
+	public void setU(double u){
+		m_u = u;
+	}
 	// Every user is represented by (u*global + individual)
 	@Override
 	protected double logit(_SparseFeature[] fvs, _AdaptStruct user){
@@ -189,27 +192,6 @@ public class MTRegLR extends RegLR {
 			for(int k=0; k<uWeights.length; k++)
 				pWeights[k] = uWeights[k] + m_u*gWeights[k];
 			u.setPersonalizedModel(pWeights);
-		}
-	}
-	public void savePerf(String perfLocation) {
-		try {
-			BufferedWriter writer = new BufferedWriter(new FileWriter(perfLocation+"/allUsers.perf"));
-			for(_AdaptStruct user:m_userList) {
-	            StringBuilder buffer = new StringBuilder(512);
-	            buffer.append(user.getUserID()+"\t");
-//	            for(_Review r: user.getReviews()){
-//	            	if(r.getType() == rType.TEST)
-//	            }	
-	            for(int i=0; i<m_classNo; i++){
-	            	for(int j=0; j<m_classNo; j++)
-	            		buffer.append(user.getPerfStat().getEntry(i, j)+"\t");
-	            }
-	            buffer.append("\n");
-	            writer.write(buffer.toString());
-	        } 
-	        writer.close();
-		}catch (Exception e) {
-			e.printStackTrace();  
 		}
 	}
 }

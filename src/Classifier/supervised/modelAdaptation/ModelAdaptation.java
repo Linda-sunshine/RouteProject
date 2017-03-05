@@ -351,4 +351,27 @@ public abstract class ModelAdaptation extends BaseClassifier {
 			m_perf[i] = m_microStat.getF1(i);
 		return m_perf;
 	}
+	
+	
+	public void savePerf(String perfLocation) {
+		try {
+			BufferedWriter writer = new BufferedWriter(new FileWriter(perfLocation+"/allUsers.perf"));
+			for(_AdaptStruct user:m_userList) {
+	            StringBuilder buffer = new StringBuilder(512);
+	            buffer.append(user.getUserID()+"\t");
+//	            for(_Review r: user.getReviews()){
+//	            	if(r.getType() == rType.TEST)
+//	            }	
+	            for(int i=0; i<m_classNo; i++){
+	            	for(int j=0; j<m_classNo; j++)
+	            		buffer.append(user.getPerfStat().getEntry(i, j)+"\t");
+	            }
+	            buffer.append("\n");
+	            writer.write(buffer.toString());
+	        } 
+	        writer.close();
+		}catch (Exception e) {
+			e.printStackTrace();  
+		}
+	}
 }
