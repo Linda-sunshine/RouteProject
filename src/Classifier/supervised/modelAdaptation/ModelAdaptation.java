@@ -243,7 +243,8 @@ public abstract class ModelAdaptation extends BaseClassifier {
 									userPerfStat.addOnePredResult(predL, trueL);
 								}
 							}							
-							userPerfStat.calculatePRF();	
+							userPerfStat.calculatePRF();
+							System.out.println(userPerfStat.getAccuracy());
 						}
 					} catch(Exception ex) {
 						ex.printStackTrace(); 

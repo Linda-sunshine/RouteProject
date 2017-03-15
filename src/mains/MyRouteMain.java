@@ -50,12 +50,12 @@ public class MyRouteMain {
 //		adaptation.test();
 //		}}
 //		
-		GlobalSVM gsvm = new GlobalSVM(classNumber, featureSize);
-		gsvm.loadUsers(analyzer.getUsers());
-		gsvm.setC(1);
-		gsvm.setBias(true);
-		gsvm.train();
-		gsvm.test();
+//		GlobalSVM gsvm = new GlobalSVM(classNumber, featureSize);
+//		gsvm.loadUsers(analyzer.getUsers());
+//		gsvm.setC(1);
+//		gsvm.setBias(true);
+//		gsvm.train();
+//		gsvm.test();
 //		gsvm.saveSupModel("gsvm_2.txt");
 //		gsvm.savePerf("./data/");
 //		gsvm.saveModel("./data/gsvm/");
@@ -69,12 +69,12 @@ public class MyRouteMain {
 //		for(_User u: analyzer.getUsers())
 //			u.getPerfStat().clear();
 //		
-//		IndividualSVM indsvm = new IndividualSVM(classNumber, featureSize);
-//		indsvm.setC(0.1);
-//		indsvm.setBias(false);
-//		indsvm.loadUsers(analyzer.getUsers());
-//		indsvm.train();
-//		indsvm.test();
+		IndividualSVM indsvm = new IndividualSVM(classNumber, featureSize);
+		indsvm.setC(1);
+		indsvm.setBias(false);
+		indsvm.loadUsers(analyzer.getUsers());
+		indsvm.train();
+		indsvm.test();
 		
 	}
 }

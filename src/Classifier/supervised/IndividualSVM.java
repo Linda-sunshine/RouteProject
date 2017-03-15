@@ -22,7 +22,8 @@ public class IndividualSVM extends ModelAdaptation {
 	double m_C = 5; 
 	boolean m_bias = true;
 	Model m_libModel; // Libmodel trained by liblinear.
-	
+	//L2R_LR
+	//L2R_L1LOSS_SVC_DUAL
 	SolverType m_solverType = SolverType.L2R_L1LOSS_SVC_DUAL;
 	ArrayList<_AdaptStruct> m_supUserList = new ArrayList<_AdaptStruct>();
 	
@@ -103,7 +104,9 @@ public class IndividualSVM extends ModelAdaptation {
 				libProblem.bias = -1;// no bias term in liblinear.
 			}
 			m_libModel = Linear.train(libProblem, new Parameter(m_solverType, m_C, SVM.EPS));
-			
+			for(double w: m_libModel.getWeights())
+				System.out.print(w+"\t");
+			System.out.println();
 			// Set users in the same cluster.
 			if(m_supFlag)
 				setPersonalizedModelInCluster(user.getUser().getClusterIndex());
