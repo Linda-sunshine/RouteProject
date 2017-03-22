@@ -3,7 +3,6 @@ package mains;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import opennlp.tools.util.InvalidFormatException;
-import structures._User;
 import Analyzer.BinaryRouteAnalyzer;
 import Classifier.supervised.GlobalSVM;
 import Classifier.supervised.modelAdaptation.MultiTaskSVM;
