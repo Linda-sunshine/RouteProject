@@ -181,8 +181,11 @@ public class BinaryRouteAnalyzer extends UserAnalyzer {
 			for(_User u: m_users){
 				for(_Review r: u.getReviews()){
 //					if(r.getType() == rType.ADAPTATION){
-						for(_SparseFeature sf: r.getSparse())
-							sf.setValue((sf.getValue()-mean[sf.getIndex()])/var[sf.getIndex()]);
+						for(_SparseFeature sf: r.getSparse()){
+							double val = (sf.getValue()-mean[sf.getIndex()])/var[sf.getIndex()];
+							sf.setValue(val);
+
+						}
 //					}
 				}
 			}

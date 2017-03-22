@@ -356,7 +356,7 @@ public abstract class ModelAdaptation extends BaseClassifier {
 	
 	public void savePerf(String perfLocation) {
 		try {
-			BufferedWriter writer = new BufferedWriter(new FileWriter(perfLocation+"/allUsers.perf"));
+			BufferedWriter writer = new BufferedWriter(new FileWriter(perfLocation+"_allUsers.perf"));
 			for(_AdaptStruct user:m_userList) {
 	            StringBuilder buffer = new StringBuilder(512);
 	            buffer.append(user.getUserID()+"\t");

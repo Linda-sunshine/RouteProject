@@ -23,10 +23,10 @@ public class MyRouteMain {
 		double trainRatio = 0, adaptRatio = 0.8;
 		boolean enforceAdapt = true;
 		int featureSize = 8; // They both have 8 features.
-		int dataset = 1;// "2"
+		int dataset = 2;// "2"
 		
 		String tokenModel = "./data/Model/en-token.bin"; // Token model.
-		String userFolder = String.format("./data/Dataset%d/Format2",dataset); 
+		String userFolder = String.format("./data/Dataset%d/Shuffle",dataset); 
 		String globalModel = String.format("./data/gsvm_%d.txt", dataset);
 		BinaryRouteAnalyzer analyzer = new BinaryRouteAnalyzer(tokenModel, classNumber, null, Ngram, lengthThreshold);
 		analyzer.setFeatureSize(featureSize);
@@ -75,6 +75,7 @@ public class MyRouteMain {
 		indsvm.loadUsers(analyzer.getUsers());
 		indsvm.train();
 		indsvm.test();
+		indsvm.savePerf("./data/indsvm");
 		
 	}
 }
