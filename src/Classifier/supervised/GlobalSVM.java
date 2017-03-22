@@ -70,6 +70,9 @@ public class GlobalSVM extends IndividualSVM{
 		}
 	
 		m_libModel = Linear.train(libProblem, new Parameter(m_solverType, m_C, SVM.EPS));
+		for(double w: m_libModel.getWeights())
+			System.out.print(w+"\t");
+		System.out.println();
 		setPersonalizedModel();
 		return 0;
 	}

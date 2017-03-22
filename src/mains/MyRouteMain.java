@@ -23,10 +23,10 @@ public class MyRouteMain {
 		double trainRatio = 0, adaptRatio = 0.8;
 		boolean enforceAdapt = true;
 		int featureSize = 8; // They both have 8 features.
-		int dataset = 1;// "2"
+		int dataset = 2;// "2"
 		
 		String tokenModel = "./data/Model/en-token.bin"; // Token model.
-		String userFolder = String.format("./data/Dataset%d/Format2",dataset); 
+		String userFolder = String.format("./data/Dataset%d/Shuffle",dataset); 
 		String globalModel = String.format("./data/gsvm_%d.txt", dataset);
 		BinaryRouteAnalyzer analyzer = new BinaryRouteAnalyzer(tokenModel, classNumber, null, Ngram, lengthThreshold);
 		analyzer.setFeatureSize(featureSize);
@@ -50,12 +50,12 @@ public class MyRouteMain {
 //		adaptation.test();
 //		}}
 //		
-		GlobalSVM gsvm = new GlobalSVM(classNumber, featureSize);
-		gsvm.loadUsers(analyzer.getUsers());
-		gsvm.setC(1);
-		gsvm.setBias(true);
-		gsvm.train();
-		gsvm.test();
+//		GlobalSVM gsvm = new GlobalSVM(classNumber, featureSize);
+//		gsvm.loadUsers(analyzer.getUsers());
+//		gsvm.setC(1);
+//		gsvm.setBias(true);
+//		gsvm.train();
+//		gsvm.test();
 //		gsvm.saveSupModel("gsvm_2.txt");
 //		gsvm.savePerf("./data/");
 //		gsvm.saveModel("./data/gsvm/");
@@ -69,12 +69,13 @@ public class MyRouteMain {
 //		for(_User u: analyzer.getUsers())
 //			u.getPerfStat().clear();
 //		
-//		IndividualSVM indsvm = new IndividualSVM(classNumber, featureSize);
-//		indsvm.setC(0.1);
-//		indsvm.setBias(false);
-//		indsvm.loadUsers(analyzer.getUsers());
-//		indsvm.train();
-//		indsvm.test();
+		IndividualSVM indsvm = new IndividualSVM(classNumber, featureSize);
+		indsvm.setC(1);
+		indsvm.setBias(false);
+		indsvm.loadUsers(analyzer.getUsers());
+		indsvm.train();
+		indsvm.test();
+		indsvm.savePerf("./data/indsvm");
 		
 	}
 }
