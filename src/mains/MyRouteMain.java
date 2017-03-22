@@ -2,15 +2,10 @@ package mains;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import opennlp.tools.util.InvalidFormatException;
-import structures._User;
+
 import Analyzer.BinaryRouteAnalyzer;
-import Classifier.supervised.GlobalSVM;
-import Classifier.supervised.modelAdaptation.MultiTaskSVM;
-import Classifier.supervised.modelAdaptation.CoLinAdapt.MTLinAdapt;
 import Classifier.supervised.IndividualSVM;
-import Classifier.supervised.modelAdaptation.DirichletProcess.CLRWithDP;
-import Classifier.supervised.modelAdaptation.RegLR.MTRegLR;
+import opennlp.tools.util.InvalidFormatException;
 
 public class MyRouteMain {
 	
