@@ -5,6 +5,7 @@ import java.io.IOException;
 
 import Analyzer.BinaryRouteAnalyzer;
 import Classifier.supervised.IndividualSVM;
+import Classifier.supervised.modelAdaptation.CoLinAdapt.MTLinAdapt;
 import opennlp.tools.util.InvalidFormatException;
 
 public class MyRouteMain {
@@ -21,14 +22,14 @@ public class MyRouteMain {
 		int dataset = 2;// "2"
 		
 		String tokenModel = "./data/Model/en-token.bin"; // Token model.
-		String userFolder = String.format("./data/Dataset%d/Shuffle",dataset); 
+		String userFolder = String.format("./data/AfterScale/Dataset%d/",dataset); 
 		String globalModel = String.format("./data/gsvm_%d.txt", dataset);
 		BinaryRouteAnalyzer analyzer = new BinaryRouteAnalyzer(tokenModel, classNumber, null, Ngram, lengthThreshold);
 		analyzer.setFeatureSize(featureSize);
 		analyzer.config(trainRatio, adaptRatio, enforceAdapt);
 		analyzer.loadUserDir(userFolder);
 		analyzer.Normalize(3);// 3: z score.
-//		
+		
 //		for(int i=1; i<11; i++){
 //			for(int j=1; j<11; j++){
 //		double e1 = i*0.001, e2 = j*0.001;
@@ -39,7 +40,7 @@ public class MyRouteMain {
 //		adaptation.setLNormFlag(true);
 //		adaptation.loadUsers(analyzer.getUsers());
 //		adaptation.setDisplayLv(displayLv);
-//		adaptation.setU(1.1);
+////		adaptation.setU(1.1);
 //		adaptation.setR1TradeOff(0.001);
 //		adaptation.train();
 //		adaptation.test();
@@ -70,7 +71,7 @@ public class MyRouteMain {
 		indsvm.loadUsers(analyzer.getUsers());
 		indsvm.train();
 		indsvm.test();
-		indsvm.savePerf("./data/indsvm");
+		//indsvm.savePerf("./data/indsvm");
 		
 	}
 }

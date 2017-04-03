@@ -86,7 +86,7 @@ public class BinaryRouteAnalyzer extends UserAnalyzer {
 				strs = line.split("\\s+");
 				if(strs.length == m_featureSize+1){
 					// Construct the new review.
-					ylabel = Integer.valueOf(strs[m_featureSize]);
+					ylabel =  Double.valueOf(strs[m_featureSize]).intValue();
 					review = new _Review(m_corpus.getCollection().size(), line, ylabel);
 					AnalyzeDoc(review);
 					reviews.add(review);
