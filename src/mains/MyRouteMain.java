@@ -22,7 +22,7 @@ public class MyRouteMain {
 		int dataset = 2;// "2"
 		
 		String tokenModel = "./data/Model/en-token.bin"; // Token model.
-		String userFolder = String.format("./data/AfterScale/Dataset%d/",dataset); 
+		String userFolder = String.format("./data/Subset/Dataset%d/",dataset); 
 		String globalModel = String.format("./data/gsvm_%d.txt", dataset);
 		BinaryRouteAnalyzer analyzer = new BinaryRouteAnalyzer(tokenModel, classNumber, null, Ngram, lengthThreshold);
 		analyzer.setFeatureSize(featureSize);
