@@ -78,10 +78,10 @@ public class MTLinAdapt extends CoLinAdapt {
 			}
 				
 			reader.close();
-			} catch(IOException e){
-				System.err.format("[Error]Fail to open file %s.\n", filename);
-			}
+		} catch(IOException e){
+			System.err.format("[Error]Fail to open file %s.\n", filename);
 		}
+	}
 	// Feature group map for the super user.
 	public void loadFeatureGroupMap4SupUsr(String filename){
 		// If there is no feature group for the super user.

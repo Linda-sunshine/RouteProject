@@ -5,6 +5,7 @@ package Classifier.supervised.modelAdaptation;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -301,6 +302,9 @@ public abstract class ModelAdaptation extends BaseClassifier {
 
 	@Override
 	public void saveModel(String modelLocation) {	
+		File dir = new File(modelLocation);
+		if(!dir.exists())
+			dir.mkdirs();
 		for(_AdaptStruct user:m_userList) {
 			try {
 	            BufferedWriter writer = new BufferedWriter(new FileWriter(modelLocation+"/"+user.getUserID()+".classifer"));
@@ -317,7 +321,7 @@ public abstract class ModelAdaptation extends BaseClassifier {
 	            e.printStackTrace(); 
 	        } 
 		}
-		System.out.format("[Info]Save personalized models to %s.", modelLocation);
+		System.out.format("[Info]Save personalized models to %s.\n", modelLocation);
 	}
 	
 	@Override
@@ -355,14 +359,12 @@ public abstract class ModelAdaptation extends BaseClassifier {
 	
 	
 	public void savePerf(String perfLocation) {
+		String filename = perfLocation+"_AllUsers.perf";
 		try {
-			BufferedWriter writer = new BufferedWriter(new FileWriter(perfLocation+"_allUsers.perf"));
+			BufferedWriter writer = new BufferedWriter(new FileWriter(filename));
 			for(_AdaptStruct user:m_userList) {
 	            StringBuilder buffer = new StringBuilder(512);
 	            buffer.append(user.getUserID()+"\t");
-//	            for(_Review r: user.getReviews()){
-//	            	if(r.getType() == rType.TEST)
-//	            }	
 	            for(int i=0; i<m_classNo; i++){
 	            	for(int j=0; j<m_classNo; j++)
 	            		buffer.append(user.getPerfStat().getEntry(i, j)+"\t");
@@ -374,5 +376,6 @@ public abstract class ModelAdaptation extends BaseClassifier {
 		}catch (Exception e) {
 			e.printStackTrace();  
 		}
+		System.out.format("[Info]Save all users' performance to %s.\n", filename);
 	}
 }

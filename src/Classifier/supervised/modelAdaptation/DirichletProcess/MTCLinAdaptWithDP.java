@@ -1,6 +1,8 @@
 package Classifier.supervised.modelAdaptation.DirichletProcess;
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileInputStream;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.HashMap;
@@ -8,6 +10,7 @@ import java.util.HashMap;
 import Classifier.supervised.modelAdaptation._AdaptStruct;
 import structures._Doc;
 import structures._SparseFeature;
+import structures._thetaStar;
 import utils.Utils;
 /***
  * Linear transformation matrix with DP.
@@ -40,6 +43,26 @@ public class MTCLinAdaptWithDP extends CLinAdaptWithDP {
 		return m_kBar*m_dim*2 + m_dimSup*2;// we have global here.
 	}
 	
+	//Load global model from file.
+	public void loadGlobalModel(HashMap<String, Integer> featureMap, String filename){
+			
+		try{
+			BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(filename), "UTF-8"));
+			String line = reader.readLine();
+			String features[];
+			m_gWeights = new double[m_featureSize+1];//to include the bias term
+			
+			features = line.split(",");
+			System.out.println(features.length + " features are loaded for global model.");
+			for(int i=0; i<features.length; i++){
+				m_gWeights[i] = Double.valueOf(features[i]);
+			}
+				
+			reader.close();
+		} catch(IOException e){
+			System.err.format("[Error]Fail to open file %s.\n", filename);
+		}
+	}
 	@Override
 	protected void accumulateClusterModels(){
 		super.accumulateClusterModels();
@@ -212,5 +235,34 @@ public class MTCLinAdaptWithDP extends CLinAdaptWithDP {
 			m_supWeights[i] = getSupWeights(i);
 		
 		super.evaluateModel();	
+	}
+	
+	public void printClusterInfo(){
+		for(int i=0;i<m_userList.size(); i++){
+			_DPAdaptStruct user = (_DPAdaptStruct) m_userList.get(i);
+			System.out.println(i + "," + user.getThetaStar().getIndex());
+		}
+	}
+
+	@Override
+	public void saveModel(String modelLocation) {
+		setPersonalizedModel();
+		for(_AdaptStruct user:m_userList) {
+			try {
+	            BufferedWriter writer = new BufferedWriter(new FileWriter(modelLocation+"/"+user.getUserID()+".classifer"));
+	            StringBuilder buffer = new StringBuilder(512);
+	            double[] pWeights = user.getPWeights();
+	            for(int i=0; i<pWeights.length; i++) {
+	            	buffer.append(pWeights[i]);
+	            	if (i<pWeights.length-1)
+	            		buffer.append(',');
+	            }
+	            writer.write(buffer.toString());
+	            writer.close();
+	        } catch (Exception e) {
+	            e.printStackTrace(); 
+	        } 
+		}
+		System.out.format("[Info]Save personalized models to %s.", modelLocation);
 	}
 }
