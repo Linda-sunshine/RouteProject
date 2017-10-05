@@ -1,8 +1,10 @@
 package Classifier.supervised.modelAdaptation.CoLinAdapt;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
@@ -356,5 +358,26 @@ public class MTLinAdapt extends CoLinAdapt {
 		} catch(IOException e){
 			e.printStackTrace();
 		}
+	}
+	@Override
+	public void savePerf(String perfLocation) {
+		String filename = String.format("%s_all_%d_%.2f_%.2f_%.2f_%.2f", perfLocation, m_featureSize, m_eta1, m_eta2, m_eta3, m_eta4);
+		try {
+			BufferedWriter writer = new BufferedWriter(new FileWriter(filename));
+			for(_AdaptStruct user:m_userList) {
+	            StringBuilder buffer = new StringBuilder(512);
+	            buffer.append(user.getUserID()+"\t");
+	            for(int i=0; i<m_classNo; i++){
+	            	for(int j=0; j<m_classNo; j++)
+	            		buffer.append(user.getPerfStat().getEntry(i, j)+"\t");
+	            }
+	            buffer.append("\n");
+	            writer.write(buffer.toString());
+	        } 
+	        writer.close();
+		}catch (Exception e) {
+			e.printStackTrace();  
+		}
+		System.out.format("[Info]Save all users' performance to %s.\n", filename);
 	}
 }
