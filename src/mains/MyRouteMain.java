@@ -28,15 +28,15 @@ public class MyRouteMain {
 		// ratio for adaptaion
 		double trainRatio = 0, adaptRatio = 0.82;
 		boolean enforceAdapt = true;
-		int featureSize = 5; // They both have 8 features.
+		int featureSize = 8; // They both have 8 features.
 		int dataset = 1;// "2"
 		
 		String tokenModel = "./data/Model/en-token.bin"; // Token model.
-//		String userFolder = String.format("./data/MakeUp/rule_2/Dataset1_homo/",dataset);
-		String userFolder = String.format("./data/SyntheticDataset28Systemstart/",dataset);
+		String userFolder = String.format("./data/Dataset1/Format2/",dataset);
+//		String userFolder = String.format("./data/SyntheticDataset28Systemstart/",dataset);
 //		String userFolder = String.format("./data/Dataset%d/format2/",dataset);
 //		String globalModel = String.format("./data/gsvm_%d.txt", dataset);
-		String globalModel = String.format("./data/gsvm_28.txt", dataset);
+		String globalModel = String.format("./data/gsvm_1.txt", dataset);
 		
 		BinaryRouteAnalyzer analyzer = new BinaryRouteAnalyzer(tokenModel, classNumber, null, Ngram, lengthThreshold);
 		analyzer.setFeatureSize(featureSize);
@@ -72,7 +72,7 @@ public class MyRouteMain {
 			adaptation.setLNormFlag(true);
 
 		} else if(model.equals("mtlinadapt")){
-			adaptation = new MTLinAdapt(classNumber, featureSize, null, 15, globalModel, null, null);
+			adaptation = new MTLinAdapt(classNumber, featureSize, null, 8, globalModel, null, null);
 			adaptation.setLNormFlag(true);
 			((LinAdapt) adaptation).setR1TradeOffs(eta1, eta2);
 			((CoLinAdapt) adaptation).setR2TradeOffs(eta3, eta4);

@@ -362,6 +362,7 @@ public class MTLinAdapt extends CoLinAdapt {
 	@Override
 	public void savePerf(String perfLocation) {
 		String filename = String.format("%s_all_%d_%.2f_%.2f_%.2f_%.2f", perfLocation, m_featureSize, m_eta1, m_eta2, m_eta3, m_eta4);
+		filename += "_" + System.currentTimeMillis();
 		try {
 			BufferedWriter writer = new BufferedWriter(new FileWriter(filename));
 			for(_AdaptStruct user:m_userList) {
