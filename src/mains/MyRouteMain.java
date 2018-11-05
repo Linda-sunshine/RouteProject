@@ -93,6 +93,7 @@ public class MyRouteMain {
 		adaptation.setDisplayLv(displayLv);
 		adaptation.train();
 		adaptation.test();
+		((MTLinAdapt) adaptation).saveSupModel("./data/global_model.txt");
 		
 		if(saveModel)
 			adaptation.saveModel("./data/"+model);
