@@ -105,7 +105,7 @@ public class UserAnalyzer extends DocAnalyzer {
 			return;
 		File dir = new File(folder);
 		for(File f: dir.listFiles()){
-			if(f.isFile() && f.getAbsolutePath().endsWith("txt")){
+			if(f.isFile() && f.getAbsolutePath().endsWith("Train.txt")){
 				loadUser(f.getAbsolutePath());
 				count++;
 			} else if (f.isDirectory())
@@ -115,23 +115,28 @@ public class UserAnalyzer extends DocAnalyzer {
 	}
 	
 	String extractUserID(String text) {
-		int index = text.indexOf('.');
-		if (index==-1)
-			return text;
+//		int index = text.indexOf('.');
+//		if (index==-1)
+//			return text;
+//		else
+//			return text.substring(0, index);
+		int index = text.indexOf('M');
+		if(index == -1)
+			return "-1";
 		else
 			return text.substring(0, index);
 	}
 	
-	// Load one file as a user here. 
+	// Load one file as a user here.
 	public void loadUser(String filename){
 		try {
 			File file = new File(filename);
 			BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(file), "UTF-8"));
-			String line;			
+			String line;
 			String userID = extractUserID(file.getName()); //UserId is contained in the filename.
 			// Skip the first line since it is user name.
-			reader.readLine(); 
-			
+			reader.readLine();
+
 			String productID, source, category;
 			ArrayList<_Review> reviews = new ArrayList<_Review>();
 			_Review review;
@@ -143,7 +148,7 @@ public class UserAnalyzer extends DocAnalyzer {
 				category = reader.readLine(); // review category
 				ylabel = Integer.valueOf(reader.readLine());
 				timestamp = Long.valueOf(reader.readLine());
-				
+
 				// Construct the new review.
 				if(ylabel != 3){
 					ylabel = (ylabel >= 4) ? 1:0;
@@ -152,9 +157,9 @@ public class UserAnalyzer extends DocAnalyzer {
 						reviews.add(review);
 				}
 			}
-			
+
 			if(reviews.size() > 1){//at least one for adaptation and one for testing
-				allocateReviews(reviews);				
+				allocateReviews(reviews);
 				m_users.add(new _User(userID, m_classNo, reviews)); //create new user from the file.
 			}
 			reader.close();
@@ -162,7 +167,8 @@ public class UserAnalyzer extends DocAnalyzer {
 			e.printStackTrace();
 		}
 	}
-	
+
+
 	//[0, train) for training purpose
 	//[train, adapt) for adaptation purpose
 	//[adapt, 1] for testing purpose

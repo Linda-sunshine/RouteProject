@@ -16,6 +16,7 @@ import Classifier.supervised.modelAdaptation._AdaptStruct;
 import LBFGS.LBFGS;
 import LBFGS.LBFGS.ExceptionWithIflag;
 import structures._Doc;
+import structures._PerformanceStat;
 import structures._SparseFeature;
 import structures._User;
 
@@ -359,6 +360,18 @@ public class MTLinAdapt extends CoLinAdapt {
 			e.printStackTrace();
 		}
 	}
+
+	public void calcAvgPrediction(){
+		double avg = 0;
+
+		for(_AdaptStruct user:m_userList) {
+			avg += user.getPerfStat().getAccuracy();
+		}
+
+		System.out.println("----avg preccision is :-------");
+		System.out.println(avg/m_userList.size());
+	}
+
 	@Override
 	public void savePerf(String perfLocation) {
 		String filename = String.format("%s_all_%d_%.2f_%.2f_%.2f_%.2f", perfLocation, m_featureSize, m_eta1, m_eta2, m_eta3, m_eta4);

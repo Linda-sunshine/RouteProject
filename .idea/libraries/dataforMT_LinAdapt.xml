@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="dataforMT_LinAdapt">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/data/dataforMT_LinAdapt.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -216,6 +216,7 @@ public abstract class ModelAdaptation extends BaseClassifier {
 	
 	@Override
 	public double test(){
+//		System.out.println("test called here!!");
 		int numberOfCores = Runtime.getRuntime().availableProcessors();
 		ArrayList<Thread> threads = new ArrayList<Thread>();
 		

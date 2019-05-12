@@ -164,9 +164,16 @@ public class _User {
 	}
 	
 	public int predict(_Doc doc) {
+//		System.out.println("predict called here!!");
+
 		_SparseFeature[] fv = doc.getSparse();
 
 		double maxScore = Utils.dotProduct(m_pWeight, fv, 0);
+
+//		System.out.println(maxScore);
+//		System.out.println(1/(1+Math.exp(-maxScore)));
+//		System.out.println("=================");
+
 		if (m_classNo==2) {
 			return maxScore>0?1:0;
 		} else {//we will have k classes for multi-class classification
