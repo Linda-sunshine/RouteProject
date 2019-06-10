@@ -92,7 +92,9 @@ public class BinaryRouteAnalyzer extends UserAnalyzer {
 			m_users.add(user); //create new user from the file.
 			reader.close();
 
-			String testFilename = filename.substring(0, filename.length()-9) + "Test.txt";
+			String[] pathStrs = filename.split("/");
+			int len = pathStrs[pathStrs.length-1].length() + pathStrs[pathStrs.length-2].length() + 2;
+			String testFilename = String.format("%s/Test/%sTest.txt", filename.substring(0, filename.length()-len), userID);
 			file = new File(testFilename);
 			reader = new BufferedReader(new InputStreamReader(new FileInputStream(file), "UTF-8"));
 			while((line = reader.readLine()) != null){

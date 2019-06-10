@@ -3,6 +3,7 @@ package Classifier.supervised;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import structures._PerformanceStat;
 import structures._Review;
 import structures._SparseFeature;
 import structures._User;
@@ -17,14 +18,15 @@ import Classifier.supervised.liblinear.Problem;
 import Classifier.supervised.liblinear.SolverType;
 import Classifier.supervised.modelAdaptation.ModelAdaptation;
 import Classifier.supervised.modelAdaptation._AdaptStruct;
+import utils.Utils;
 
 public class IndividualSVM extends ModelAdaptation {
-	double m_C = 5; 
+	double m_C = 0.0000001;
 	boolean m_bias = true;
 	Model m_libModel; // Libmodel trained by liblinear.
 	//L2R_LR
 	//L2R_L1LOSS_SVC_DUAL
-	SolverType m_solverType = SolverType.L2R_L1LOSS_SVC_DUAL;
+	SolverType m_solverType = SolverType.L2R_L2LOSS_SVC;
 	ArrayList<_AdaptStruct> m_supUserList = new ArrayList<_AdaptStruct>();
 	
 	public IndividualSVM(int classNo, int featureSize){
@@ -77,7 +79,7 @@ public class IndividualSVM extends ModelAdaptation {
 			boolean validUser = false;
 			for(_Review r:reviews) {				
 				if (r.getType() == rType.ADAPTATION) {//we will only use the adaptation data for this purpose
-					fvs.add(createLibLinearFV(r, validUserIndex));
+					fvs.add(createLibLinearFV(r));
 					ys.add(new Double(r.getYLabel()));
 					trainSize ++;
 					validUser = true;
@@ -115,7 +117,63 @@ public class IndividualSVM extends ModelAdaptation {
 		}
 		return 0;
 	}
-	
+
+//
+//	@Override
+//	public double test() {
+//		_PerformanceStat userPerfStat;
+//		for (int i = 0; i <m_userList.size(); i ++) {
+//			_AdaptStruct user = m_userList.get(i);
+//			if ((m_testmode == TestMode.TM_batch && user.getTestSize() < 1) // no testing data
+//					|| (m_testmode == TestMode.TM_online && user.getAdaptationSize() < 1) // no adaptation data
+//					|| (m_testmode == TestMode.TM_hybrid && user.getAdaptationSize() < 1) && user.getTestSize() < 1) // no testing and adaptation data
+//				continue;
+//
+//			userPerfStat = user.getPerfStat();
+//			if (m_testmode == TestMode.TM_batch || m_testmode == TestMode.TM_hybrid) {
+//				//record prediction results
+//				for (_Review r : user.getReviews()) {
+//					if (r.getType() != rType.TEST)
+//						continue;
+//					int trueL = r.getYLabel();
+//					int predL = user.predict(r);
+////					double predL = Linear.predict(m_libModel, createLibLinearFV(r)); // evoke user's own model
+//					userPerfStat.addOnePredResult((int) predL, trueL);
+//				}
+//			}
+//			userPerfStat.calculatePRF();
+//		}
+//
+//		int count = 0;
+//		double[] macroF1 = new double[m_classNo];
+//
+//		for(_AdaptStruct user: m_userList) {
+//			if ( (m_testmode==TestMode.TM_batch && user.getTestSize()<1) // no testing data
+//					|| (m_testmode==TestMode.TM_online && user.getAdaptationSize()<1) // no adaptation data
+//					|| (m_testmode==TestMode.TM_hybrid && user.getAdaptationSize()<1) && user.getTestSize()<1) // no testing and adaptation data
+//				continue;
+//
+//			userPerfStat = user.getPerfStat();
+//			for(int i=0; i<m_classNo; i++)
+//				macroF1[i] += userPerfStat.getF1(i);
+//			m_microStat.accumulateConfusionMat(userPerfStat);
+//			count ++;
+//		}
+//
+//		System.out.println(toString());
+//		calcMicroPerfStat();
+//
+//		// macro average
+//		System.out.println("\nMacro F1:");
+//		for(int i=0; i<m_classNo; i++)
+//			System.out.format("Class %d: %.4f\t", i, macroF1[i]/count);
+//		System.out.println("\n");
+//		System.out.print(String.format("------Overall accuracy: %.4f.-------\n", m_microStat.getAccuracy()));
+//		calcAvgPrediction();
+//
+//		return Utils.sumOfArray(macroF1);
+//	}
+
 	HashMap<Integer, ArrayList<Integer>> m_cIndexUIndex;
 	public void setCIndexUIndex(HashMap<Integer, ArrayList<Integer>> cIndexUIndex){
 		m_cIndexUIndex = cIndexUIndex;
@@ -143,7 +201,7 @@ public class IndividualSVM extends ModelAdaptation {
 		user.setPersonalizedModel(m_pWeights);
 	}
 	
-	public Feature[] createLibLinearFV(_Review r, int userIndex){
+	public Feature[] createLibLinearFV(_Review r){
 		int fIndex; double fValue;
 		_SparseFeature fv;
 		_SparseFeature[] fvs = r.getSparse();

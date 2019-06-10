@@ -213,95 +213,166 @@ public abstract class ModelAdaptation extends BaseClassifier {
 	}
 	
 	abstract protected void setPersonalizedModel();
-	
+
+
 	@Override
-	public double test(){
-//		System.out.println("test called here!!");
-		int numberOfCores = Runtime.getRuntime().availableProcessors();
-		ArrayList<Thread> threads = new ArrayList<Thread>();
-		
-		for(int k=0; k<numberOfCores; ++k){
-			threads.add((new Thread() {
-				int core, numOfCores;
-				public void run() {
-					_AdaptStruct user;
-					_PerformanceStat userPerfStat;
-					try {
-						for (int i = 0; i + core <m_userList.size(); i += numOfCores) {
-							user = m_userList.get(i+core);
-							if ( (m_testmode==TestMode.TM_batch && user.getTestSize()<1) // no testing data
-								|| (m_testmode==TestMode.TM_online && user.getAdaptationSize()<1) // no adaptation data
-								|| (m_testmode==TestMode.TM_hybrid && user.getAdaptationSize()<1) && user.getTestSize()<1) // no testing and adaptation data 
-								continue;
-								
-							userPerfStat = user.getPerfStat();								
-							if (m_testmode==TestMode.TM_batch || m_testmode==TestMode.TM_hybrid) {				
-								//record prediction results
-								for(_Review r:user.getReviews()) {
-									if (r.getType() != rType.TEST)
-										continue;
-									int trueL = r.getYLabel();
-									int predL = user.predict(r); // evoke user's own model
-									userPerfStat.addOnePredResult(predL, trueL);
-								}
-							}							
-							userPerfStat.calculatePRF();
-//							System.out.println(userPerfStat.getAccuracy());
-						}
-					} catch(Exception ex) {
-						ex.printStackTrace(); 
-					}
+	public double test() {
+		_PerformanceStat userPerfStat;
+		for (int i = 0; i <m_userList.size(); i ++) {
+			_AdaptStruct user = m_userList.get(i);
+			if ((m_testmode == TestMode.TM_batch && user.getTestSize() < 1) // no testing data
+					|| (m_testmode == TestMode.TM_online && user.getAdaptationSize() < 1) // no adaptation data
+					|| (m_testmode == TestMode.TM_hybrid && user.getAdaptationSize() < 1) && user.getTestSize() < 1) // no testing and adaptation data
+				continue;
+
+			userPerfStat = user.getPerfStat();
+			if (m_testmode == TestMode.TM_batch || m_testmode == TestMode.TM_hybrid) {
+				//record prediction results
+				for (_Review r : user.getReviews()) {
+					if (r.getType() != rType.TEST)
+						continue;
+					int trueL = r.getYLabel();
+					int predL = user.predict(r); // evoke user's own model
+					userPerfStat.addOnePredResult(predL, trueL);
 				}
-				
-				private Thread initialize(int core, int numOfCores) {
-					this.core = core;
-					this.numOfCores = numOfCores;
-					return this;
-				}
-			}).initialize(k, numberOfCores));
-			
-			threads.get(k).start();
+			}
+			userPerfStat.calculatePRF();
 		}
-		
-		for(int k=0;k<numberOfCores;++k){
-			try {
-				threads.get(k).join();
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			} 
-		}
-		
+
 		int count = 0;
 		double[] macroF1 = new double[m_classNo];
-		_PerformanceStat userPerfStat;
-		
-		for(_AdaptStruct user:m_userList) {
+
+		for(_AdaptStruct user: m_userList) {
 			if ( (m_testmode==TestMode.TM_batch && user.getTestSize()<1) // no testing data
-				|| (m_testmode==TestMode.TM_online && user.getAdaptationSize()<1) // no adaptation data
-				|| (m_testmode==TestMode.TM_hybrid && user.getAdaptationSize()<1) && user.getTestSize()<1) // no testing and adaptation data 
+					|| (m_testmode==TestMode.TM_online && user.getAdaptationSize()<1) // no adaptation data
+					|| (m_testmode==TestMode.TM_hybrid && user.getAdaptationSize()<1) && user.getTestSize()<1) // no testing and adaptation data
 				continue;
-			
+
 			userPerfStat = user.getPerfStat();
 			for(int i=0; i<m_classNo; i++)
 				macroF1[i] += userPerfStat.getF1(i);
 			m_microStat.accumulateConfusionMat(userPerfStat);
 			count ++;
 		}
-		
+
 		System.out.println(toString());
 		calcMicroPerfStat();
-		
+
 		// macro average
 		System.out.println("\nMacro F1:");
 		for(int i=0; i<m_classNo; i++)
 			System.out.format("Class %d: %.4f\t", i, macroF1[i]/count);
 		System.out.println("\n");
-		
-		System.out.print(String.format("Overall accuracy: %.4f.\n", m_microStat.getAccuracy()));
+		System.out.print(String.format("------Overall accuracy: %.4f.-------\n", m_microStat.getAccuracy()));
+		calcAvgPrediction();
+
 		return Utils.sumOfArray(macroF1);
 	}
+	
+//	@Override
+//	public double test(){
+////		System.out.println("test called here!!");
+//		int numberOfCores = Runtime.getRuntime().availableProcessors();
+//		ArrayList<Thread> threads = new ArrayList<Thread>();
+//
+//		for(int k=0; k<numberOfCores; ++k){
+//			threads.add((new Thread() {
+//				int core, numOfCores;
+//				public void run() {
+//					_AdaptStruct user;
+//					_PerformanceStat userPerfStat;
+//					try {
+//						for (int i = 0; i + core <m_userList.size(); i += numOfCores) {
+//							user = m_userList.get(i+core);
+//							if ( (m_testmode==TestMode.TM_batch && user.getTestSize()<1) // no testing data
+//								|| (m_testmode==TestMode.TM_online && user.getAdaptationSize()<1) // no adaptation data
+//								|| (m_testmode==TestMode.TM_hybrid && user.getAdaptationSize()<1) && user.getTestSize()<1) // no testing and adaptation data
+//								continue;
+//
+//							userPerfStat = user.getPerfStat();
+//							if (m_testmode==TestMode.TM_batch || m_testmode==TestMode.TM_hybrid) {
+//								//record prediction results
+//								for(_Review r:user.getReviews()) {
+//									if (r.getType() != rType.TEST)
+//										continue;
+//									int trueL = r.getYLabel();
+//									int predL = user.predict(r); // evoke user's own model
+//									userPerfStat.addOnePredResult(predL, trueL);
+//								}
+//							}
+//							userPerfStat.calculatePRF();
+////							System.out.println(userPerfStat.getAccuracy());
+//						}
+//					} catch(Exception ex) {
+//						ex.printStackTrace();
+//					}
+//				}
+//
+//				private Thread initialize(int core, int numOfCores) {
+//					this.core = core;
+//					this.numOfCores = numOfCores;
+//					return this;
+//				}
+//			}).initialize(k, numberOfCores));
+//
+//			threads.get(k).start();
+//		}
+//
+//		for(int k=0;k<numberOfCores;++k){
+//			try {
+//				threads.get(k).join();
+//			} catch (InterruptedException e) {
+//				e.printStackTrace();
+//			}
+//		}
+//
+//		int count = 0;
+//		double[] macroF1 = new double[m_classNo];
+//		_PerformanceStat userPerfStat;
+//
+//		for(_AdaptStruct user:m_userList) {
+//			if ( (m_testmode==TestMode.TM_batch && user.getTestSize()<1) // no testing data
+//				|| (m_testmode==TestMode.TM_online && user.getAdaptationSize()<1) // no adaptation data
+//				|| (m_testmode==TestMode.TM_hybrid && user.getAdaptationSize()<1) && user.getTestSize()<1) // no testing and adaptation data
+//				continue;
+//
+//			userPerfStat = user.getPerfStat();
+//			for(int i=0; i<m_classNo; i++)
+//				macroF1[i] += userPerfStat.getF1(i);
+//			m_microStat.accumulateConfusionMat(userPerfStat);
+//			count ++;
+//		}
+//
+//		System.out.println(toString());
+//		calcMicroPerfStat();
+//
+//		// macro average
+//		System.out.println("\nMacro F1:");
+//		for(int i=0; i<m_classNo; i++)
+//			System.out.format("Class %d: %.4f\t", i, macroF1[i]/count);
+//		System.out.println("\n");
+//
+//
+//		System.out.print(String.format("------Overall accuracy: %.4f.-------\n", m_microStat.getAccuracy()));
+//
+//        calcAvgPrediction();
+//
+//		return Utils.sumOfArray(macroF1);
+//	}
 
-	@Override
+    public void calcAvgPrediction(){
+        double avg = 0;
+
+        for(_AdaptStruct user:m_userList) {
+            avg += user.getPerfStat().getAccuracy();
+        }
+
+        System.out.println("----avg preccision is :-------");
+        System.out.println(avg/m_userList.size());
+    }
+
+
+    @Override
 	public void saveModel(String modelLocation) {	
 		File dir = new File(modelLocation);
 		if(!dir.exists())
@@ -359,18 +430,12 @@ public abstract class ModelAdaptation extends BaseClassifier {
 	}
 	
 	
-	public void savePerf(String perfLocation) {
-		String filename = perfLocation+"_AllUsers.perf";
+	public void savePerf(String filename) {
 		try {
 			BufferedWriter writer = new BufferedWriter(new FileWriter(filename));
 			for(_AdaptStruct user:m_userList) {
 	            StringBuilder buffer = new StringBuilder(512);
-	            buffer.append(user.getUserID()+"\t");
-	            for(int i=0; i<m_classNo; i++){
-	            	for(int j=0; j<m_classNo; j++)
-	            		buffer.append(user.getPerfStat().getEntry(i, j)+"\t");
-	            }
-	            buffer.append("\n");
+	            buffer.append(String.format("%s\t%.4f\n", user.getUserID(), user.getPerfStat().getAccuracy()));
 	            writer.write(buffer.toString());
 	        } 
 	        writer.close();

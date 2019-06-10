@@ -120,7 +120,7 @@ public class UserAnalyzer extends DocAnalyzer {
 //			return text;
 //		else
 //			return text.substring(0, index);
-		int index = text.indexOf('M');
+		int index = text.indexOf('T');
 		if(index == -1)
 			return "-1";
 		else

@@ -29,6 +29,7 @@ public class GlobalSVM extends IndividualSVM{
 	@Override
 	public double train() {
 		init();
+		int pos = 0, neg = 0;
 		
 		//Transfer all user reviews to instances recognized by SVM, indexed by users.
 		int trainSize = 0, validUserIndex = 0;
@@ -42,15 +43,20 @@ public class GlobalSVM extends IndividualSVM{
 			boolean validUser = false;
 			for(_Review r:reviews) {				
 				if (r.getType() == rType.ADAPTATION) {//we will only use the adaptation data for this purpose
-					fvs.add(createLibLinearFV(r, validUserIndex));
+					fvs.add(createLibLinearFV(r));
 					ys.add(new Double(r.getYLabel()));
 					trainSize ++;
 					validUser = true;
+					// check the class prior
+					if(r.getYLabel() == 1) pos++;
+					else neg++;
 				}
 			}
 			if (validUser)
 				validUserIndex ++;
 		}
+
+		System.out.format("[Stat]Among this set of users: pos instances: %d, neg instances: %d\n", pos, neg);
 		// Train individual model for each user.
 		Problem libProblem = new Problem();
 		libProblem.l = trainSize;		
@@ -58,7 +64,6 @@ public class GlobalSVM extends IndividualSVM{
 		libProblem.y = new double[trainSize];
 		for(int i=0; i<trainSize; i++) {
 			libProblem.x[i] = fvs.get(i);
-			libProblem.y[i] = ys.get(i);
 		}
 		
 		if (m_bias) {

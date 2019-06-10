@@ -41,7 +41,7 @@ public class IndSVMColdStart extends IndividualSVM {
 			boolean validUser = false;
 			while(count < m_threshold){
 				r = reviews.get(count);
-				fvs.add(createLibLinearFV(r, validUserIndex));
+				fvs.add(createLibLinearFV(r));
 				ys.add(new Double(r.getYLabel()));
 				trainSize ++;
 				validUser = true;
