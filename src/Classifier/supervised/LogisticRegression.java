@@ -4,15 +4,15 @@ import java.io.BufferedWriter;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 
 import Classifier.BaseClassifier;
+import Classifier.supervised.modelAdaptation._AdaptStruct;
 import LBFGS.LBFGS;
 import LBFGS.LBFGS.ExceptionWithIflag;
-import structures._Corpus;
-import structures._Doc;
-import structures._SparseFeature;
+import structures.*;
 import utils.Utils;
 
 public class LogisticRegression extends BaseClassifier {
@@ -212,5 +212,48 @@ public class LogisticRegression extends BaseClassifier {
 			e.printStackTrace();
 		}
 		
+	}
+
+	public void loadUsers(ArrayList<_User> users){
+		for(_User u: users){
+			for(_Review r: u.getReviews()){
+				if (r.getType() == _Doc.rType.ADAPTATION) {
+					m_trainSet.add(r);
+				} else
+					m_testSet.add(r);
+			}
+		}
+	}
+
+	public ArrayList<_Doc> getTrainSet(){
+		return m_trainSet;
+	}
+
+	@Override
+	public double test() {
+		double acc = 0;
+		for(_Doc doc: m_testSet){
+			doc.setPredictLabel(predict(doc)); //Set the predict label according to the probability of different classes.
+			int pred = doc.getPredictLabel(), ans = doc.getYLabel();
+			m_TPTable[pred][ans] += 1; //Compare the predicted label and original label, construct the TPTable.
+
+			if (pred != ans) {
+				if (m_debugOutput!=null && Math.random()<0.2)//try to reduce the output size
+					debug(doc);
+			} else {//also print out some correctly classified samples
+				if (m_debugOutput!=null && Math.random()<0.02)
+					debug(doc);
+				acc ++;
+			}
+		}
+		m_precisionsRecalls.add(calculatePreRec(m_TPTable));
+		for(int i=0; i<m_confusionMat.length; i++){
+			for(int j=0; j<m_confusionMat[0].length; j++){
+				System.out.print(m_confusionMat[i][j] + "\t");
+			}
+			System.out.println();
+		}
+		System.out.println("overall precision: " + acc /m_testSet.size());
+		return acc /m_testSet.size();
 	}
 }

@@ -10,7 +10,7 @@ import Classifier.supervised.modelAdaptation.DirichletProcess._DPAdaptStruct;
 import opennlp.tools.util.InvalidFormatException;
 import structures._Review;
 import structures._thetaStar;
-import structures._Review.rType;
+import structures._Doc.rType;
 import utils.Utils;
 
 public class IsoUserAnalyzer extends MultiThreadedUserAnalyzer {

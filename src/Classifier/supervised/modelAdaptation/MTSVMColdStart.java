@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import structures._PerformanceStat;
 import structures._Review;
 import structures._PerformanceStat.TestMode;
-import structures._Review.rType;
+import structures._Doc.rType;
 import utils.Utils;
 import Classifier.supervised.SVM;
 import Classifier.supervised.liblinear.Feature;

@@ -10,7 +10,7 @@ import java.util.LinkedList;
 import structures._Doc;
 import structures._PerformanceStat;
 import structures._Review;
-import structures._Review.rType;
+import structures._Doc.rType;
 import structures._SparseFeature;
 import structures._User;
 
@@ -176,10 +176,17 @@ public class _AdaptStruct {
 	public void setPersonalizedModel(double[] pWeight) {
 		m_user.setModel(pWeight);
 	}
-	
-	public int predict(_Doc doc) {
-		return m_user.predict(doc);
+
+	public int predict(_Doc doc){
+		if(doc.getPredValue() != -1)
+			return doc.getPredValue()>0.5 ? 1: 0;
+		else
+			return m_user.predict(doc);
 	}
+
+//	public int predict(_Doc doc) {
+//		return m_user.predict(doc);
+//	}
 	
 	public double linearFunc(_SparseFeature[] fvs, int classid) {
 		return m_user.linearFunc(fvs, classid);

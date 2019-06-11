@@ -16,7 +16,7 @@ import Classifier.supervised.modelAdaptation._AdaptStruct.SimType;
 import Classifier.supervised.modelAdaptation.RegLR.asyncRegLR;
 import structures._PerformanceStat;
 import structures._PerformanceStat.TestMode;
-import structures._Review.rType;
+import structures._Doc.rType;
 import structures._RankItem;
 import structures._Review;
 import structures._UserReviewPair;

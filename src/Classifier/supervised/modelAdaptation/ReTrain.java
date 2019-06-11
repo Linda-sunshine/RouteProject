@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import structures.MyPriorityQueue;
 import structures._RankItem;
 import structures._Review;
-import structures._Review.rType;
+import structures._Doc.rType;
 import structures._User;
 import utils.Utils;
 import Classifier.supervised.IndividualSVM;

@@ -3,8 +3,58 @@
   <component name="ChangeListManager">
     <list default="true" id="eb683325-497f-4d86-9e6b-29ffea7c04ca" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RouteProject/Analyzer/BinaryRouteAnalyzer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RouteProject/Analyzer/BinaryRouteAnalyzer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RouteProject/Analyzer/IsoUserAnalyzer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RouteProject/Analyzer/IsoUserAnalyzer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RouteProject/Analyzer/UserAnalyzer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RouteProject/Analyzer/UserAnalyzer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RouteProject/Classifier/supervised/GlobalSVM.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RouteProject/Classifier/supervised/GlobalSVM.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RouteProject/Classifier/supervised/IndSVMColdStart$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RouteProject/Classifier/supervised/IndSVMColdStart$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RouteProject/Classifier/supervised/IndSVMColdStart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RouteProject/Classifier/supervised/IndSVMColdStart.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/RouteProject/Classifier/supervised/IndividualSVM.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RouteProject/Classifier/supervised/IndividualSVM.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RouteProject/Classifier/supervised/modelAdaptation/CoLinAdapt/CoLinAdaptWithDiffFeatureGroups.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RouteProject/Classifier/supervised/modelAdaptation/CoLinAdapt/CoLinAdaptWithDiffFeatureGroups.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RouteProject/Classifier/supervised/modelAdaptation/CoLinAdapt/LinAdaptColdStart$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RouteProject/Classifier/supervised/modelAdaptation/CoLinAdapt/LinAdaptColdStart$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RouteProject/Classifier/supervised/modelAdaptation/CoLinAdapt/asyncCoLinAdapt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RouteProject/Classifier/supervised/modelAdaptation/CoLinAdapt/asyncCoLinAdapt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RouteProject/Classifier/supervised/modelAdaptation/CoLinAdapt/asyncMTLinAdapt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RouteProject/Classifier/supervised/modelAdaptation/CoLinAdapt/asyncMTLinAdapt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RouteProject/Classifier/supervised/modelAdaptation/DirichletProcess/CLRWithDP$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RouteProject/Classifier/supervised/modelAdaptation/DirichletProcess/CLRWithDP$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RouteProject/Classifier/supervised/modelAdaptation/DirichletProcess/CLRWithDP$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RouteProject/Classifier/supervised/modelAdaptation/DirichletProcess/CLRWithDP$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RouteProject/Classifier/supervised/modelAdaptation/DirichletProcess/CLRWithDP.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RouteProject/Classifier/supervised/modelAdaptation/DirichletProcess/CLRWithDP.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RouteProject/Classifier/supervised/modelAdaptation/DirichletProcess/IsoMTCLinAdaptWithDP$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RouteProject/Classifier/supervised/modelAdaptation/DirichletProcess/IsoMTCLinAdaptWithDP$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RouteProject/Classifier/supervised/modelAdaptation/DirichletProcess/IsoMTCLinAdaptWithDP$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RouteProject/Classifier/supervised/modelAdaptation/DirichletProcess/IsoMTCLinAdaptWithDP$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RouteProject/Classifier/supervised/modelAdaptation/MTSVMColdStart$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RouteProject/Classifier/supervised/modelAdaptation/MTSVMColdStart$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RouteProject/Classifier/supervised/modelAdaptation/ModelAdaptation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RouteProject/Classifier/supervised/modelAdaptation/ModelAdaptation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RouteProject/Classifier/supervised/modelAdaptation/MultiTaskSVM.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RouteProject/Classifier/supervised/modelAdaptation/MultiTaskSVM.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RouteProject/Classifier/supervised/modelAdaptation/ReTrain$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RouteProject/Classifier/supervised/modelAdaptation/ReTrain$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RouteProject/Classifier/supervised/modelAdaptation/ReTrain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RouteProject/Classifier/supervised/modelAdaptation/ReTrain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RouteProject/Classifier/supervised/modelAdaptation/RegLR/RegLR.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RouteProject/Classifier/supervised/modelAdaptation/RegLR/RegLR.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RouteProject/Classifier/supervised/modelAdaptation/_AdaptStruct.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RouteProject/Classifier/supervised/modelAdaptation/_AdaptStruct.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RouteProject/structures/_Doc.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RouteProject/structures/_Doc.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RouteProject/structures/_Review$rType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RouteProject/structures/_Review.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RouteProject/structures/_Review.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RouteProject/structures/_User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RouteProject/structures/_User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Analyzer/BinaryRouteAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Analyzer/BinaryRouteAnalyzer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Analyzer/IsoUserAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Analyzer/IsoUserAnalyzer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Analyzer/UserAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Analyzer/UserAnalyzer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/GlobalSVM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classifier/supervised/GlobalSVM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/IndSVMColdStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classifier/supervised/IndSVMColdStart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/IndividualSVM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classifier/supervised/IndividualSVM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/LogisticRegression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classifier/supervised/LogisticRegression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoLinAdapt/CoLinAdaptWithDiffFeatureGroups.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoLinAdapt/CoLinAdaptWithDiffFeatureGroups.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoLinAdapt/LinAdaptColdStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoLinAdapt/LinAdaptColdStart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoLinAdapt/asyncCoLinAdapt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoLinAdapt/asyncCoLinAdapt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoLinAdapt/asyncMTLinAdapt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoLinAdapt/asyncMTLinAdapt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/DirichletProcess/CLRWithDP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/DirichletProcess/CLRWithDP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/DirichletProcess/CLinAdaptWithDP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/DirichletProcess/CLinAdaptWithDP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/DirichletProcess/IsoMTCLinAdaptWithDP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/DirichletProcess/IsoMTCLinAdaptWithDP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/MTSVMColdStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/MTSVMColdStart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/ModelAdaptation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/ModelAdaptation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/MultiTaskSVM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/MultiTaskSVM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/ReTrain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/ReTrain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/RegLR/RegLR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/RegLR/RegLR.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/RegLR/RegLR4Sup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/RegLR/RegLR4Sup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/_AdaptStruct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/_AdaptStruct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mains/MyRouteMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mains/MyRouteMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/structures/_Doc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/structures/_Doc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/structures/_Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/structures/_Review.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/structures/_User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/structures/_User.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,34 +67,34 @@
     <session id="855998640">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
-          <entry key="project.open.time.1" value="3" />
+          <entry key="project.closed" value="16" />
+          <entry key="project.open.time.1" value="7" />
           <entry key="project.open.time.10" value="3" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.8" value="2" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.opened" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="133" />
+          <entry key="java" value="166" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="133" />
+          <entry key="JAVA" value="166" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3567" />
+          <entry key="java" value="4462" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3567" />
+          <entry key="JAVA" value="4462" />
         </counts>
       </usages-collector>
     </session>
@@ -54,8 +104,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/mains/MyRouteMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="48" selection-start-line="48" selection-end-line="48" />
+            <state relative-caret-position="265">
+              <caret line="54" column="24" selection-start-line="54" selection-start-column="15" selection-end-line="54" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -63,8 +113,42 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/ModelAdaptation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="231" selection-start-line="231" selection-end-line="231" />
+            <state relative-caret-position="5">
+              <caret line="218" column="18" selection-start-line="218" selection-start-column="18" selection-end-line="218" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Classifier/supervised/LogisticRegression.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="227" column="13" selection-start-line="227" selection-start-column="12" selection-end-line="227" selection-end-column="13" />
+              <folding>
+                <element signature="e#6440#6441#0" expanded="true" />
+                <element signature="e#6463#6464#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Classifier/BaseClassifier.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="149">
+              <caret line="186" column="22" selection-start-line="186" selection-start-column="22" selection-end-line="186" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/utils/Utils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-7">
+              <caret line="168" column="42" lean-forward="true" selection-start-line="168" selection-start-column="42" selection-end-line="168" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -72,68 +156,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Classifier/supervised/GlobalSVM.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="76" selection-start-line="76" selection-end-line="76" />
+            <state relative-caret-position="65">
+              <caret line="44" column="32" lean-forward="true" selection-start-line="44" selection-end-line="45" />
               <folding>
-                <element signature="e#604#605#0" expanded="true" />
-                <element signature="e#638#639#0" expanded="true" />
-                <element signature="e#990#1002#0" expanded="true" />
-                <element signature="e#1044#1052#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Classifier/supervised/IndividualSVM.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Classifier/supervised/liblinear/Model.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="49" selection-start-line="49" selection-end-line="49" />
+            <state relative-caret-position="130">
+              <caret line="22" column="50" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="50" />
               <folding>
-                <element signature="e#1164#1165#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Analyzer/BinaryRouteAnalyzer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="753">
-              <caret line="109" column="42" selection-start-line="109" selection-start-column="36" selection-end-line="109" selection-end-column="42" />
-              <folding>
-                <element signature="e#2431#2440#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Classifier/supervised/liblinear/Linear.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="230" selection-start-line="230" selection-end-line="230" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Classifier/supervised/liblinear/SolverType.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="86" column="49" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="49" />
-              <folding>
-                <element signature="e#2973#2974#0" expanded="true" />
-                <element signature="e#3019#3020#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -152,17 +190,34 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/structures/_User.java" />
         <option value="$PROJECT_DIR$/src/structures/_PerformanceStat.java" />
         <option value="$PROJECT_DIR$/src/LBFGS/LBFGS.java" />
-        <option value="$PROJECT_DIR$/src/Analyzer/UserAnalyzer.java" />
-        <option value="$PROJECT_DIR$/src/Analyzer/BinaryRouteAnalyzer.java" />
         <option value="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoLinAdapt/MTLinAdapt.java" />
-        <option value="$PROJECT_DIR$/src/mains/MyRouteMain.java" />
+        <option value="$PROJECT_DIR$/src/structures/_Doc.java" />
+        <option value="$PROJECT_DIR$/src/structures/_Review.java" />
+        <option value="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/_AdaptStruct.java" />
         <option value="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/ModelAdaptation.java" />
         <option value="$PROJECT_DIR$/src/Classifier/supervised/GlobalSVM.java" />
+        <option value="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/MultiTaskSVM.java" />
+        <option value="$PROJECT_DIR$/src/structures/_User.java" />
+        <option value="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/RegLR/RegLR.java" />
+        <option value="$PROJECT_DIR$/src/Analyzer/UserAnalyzer.java" />
+        <option value="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoLinAdapt/asyncCoLinAdapt.java" />
+        <option value="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/RegLR/RegLR4Sup.java" />
+        <option value="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoLinAdapt/asyncMTLinAdapt.java" />
         <option value="$PROJECT_DIR$/src/Classifier/supervised/IndSVMColdStart.java" />
+        <option value="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoLinAdapt/CoLinAdaptWithDiffFeatureGroups.java" />
+        <option value="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/DirichletProcess/CLinAdaptWithDP.java" />
+        <option value="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/MTSVMColdStart.java" />
+        <option value="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/DirichletProcess/CLRWithDP.java" />
+        <option value="$PROJECT_DIR$/src/Analyzer/BinaryRouteAnalyzer.java" />
+        <option value="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/DirichletProcess/IsoMTCLinAdaptWithDP.java" />
+        <option value="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/ReTrain.java" />
+        <option value="$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoLinAdapt/LinAdaptColdStart.java" />
+        <option value="$PROJECT_DIR$/src/Analyzer/IsoUserAnalyzer.java" />
         <option value="$PROJECT_DIR$/src/Classifier/supervised/IndividualSVM.java" />
+        <option value="$PROJECT_DIR$/src/Classifier/supervised/LogisticRegression.java" />
+        <option value="$PROJECT_DIR$/src/mains/MyRouteMain.java" />
       </list>
     </option>
   </component>
@@ -182,7 +237,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -219,23 +273,6 @@
               <item name="RouteProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="RouteProject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Classifier" type="462c0819:PsiDirectoryNode" />
-              <item name="supervised" type="462c0819:PsiDirectoryNode" />
-              <item name="modelAdaptation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RouteProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RouteProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Classifier" type="462c0819:PsiDirectoryNode" />
-              <item name="supervised" type="462c0819:PsiDirectoryNode" />
-              <item name="modelAdaptation" type="462c0819:PsiDirectoryNode" />
-              <item name="CoLinAdapt" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RouteProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RouteProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="mains" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -243,12 +280,13 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560211848187" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560212140883" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -308,18 +346,22 @@
       <workItem from="1559012694200" duration="1523000" />
       <workItem from="1559065520577" duration="2008000" />
       <workItem from="1559762804674" duration="3650000" />
-      <workItem from="1560207860860" duration="3972000" />
+      <workItem from="1560207860860" duration="4286000" />
+      <workItem from="1560212242096" duration="128000" />
+      <workItem from="1560212382110" duration="17000" />
+      <workItem from="1560212419314" duration="96000" />
+      <workItem from="1560212589267" duration="2177000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31099000" />
+    <option name="totallyTimeSpent" value="33831000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="9" y="23" width="1440" height="789" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="789" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49776787" visible="true" weight="0.20886981" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49776787" visible="true" weight="0.22031474" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -327,7 +369,7 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32890856" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4139466" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2462908" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.42284867" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -359,26 +401,8 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Classifier/supervised/GlobalSVM.java</url>
-          <line>30</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Classifier/supervised/GlobalSVM.java</url>
-          <line>34</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Classifier/supervised/GlobalSVM.java</url>
-          <line>60</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/mains/MyRouteMain.java</url>
-          <line>44</line>
+          <line>50</line>
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
@@ -396,7 +420,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/mains/MyRouteMain.java</url>
-          <line>95</line>
+          <line>108</line>
           <properties />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
@@ -420,13 +444,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/mains/MyRouteMain.java</url>
-          <line>96</line>
+          <line>109</line>
           <properties />
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/mains/MyRouteMain.java</url>
-          <line>97</line>
+          <line>110</line>
           <properties />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
@@ -486,27 +510,21 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/mains/MyRouteMain.java</url>
-          <line>41</line>
+          <line>47</line>
           <properties />
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/mains/MyRouteMain.java</url>
-          <line>48</line>
+          <line>61</line>
           <properties />
           <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/mains/MyRouteMain.java</url>
-          <line>50</line>
+          <line>63</line>
           <properties />
           <option name="timeStamp" value="37" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Classifier/supervised/GlobalSVM.java</url>
-          <line>40</line>
-          <properties />
-          <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Classifier/supervised/IndividualSVM.java</url>
@@ -519,30 +537,6 @@
           <line>43</line>
           <properties />
           <option name="timeStamp" value="43" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Classifier/supervised/GlobalSVM.java</url>
-          <line>58</line>
-          <properties />
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Classifier/supervised/GlobalSVM.java</url>
-          <line>61</line>
-          <properties />
-          <option name="timeStamp" value="47" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Classifier/supervised/GlobalSVM.java</url>
-          <line>62</line>
-          <properties />
-          <option name="timeStamp" value="48" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Classifier/supervised/GlobalSVM.java</url>
-          <line>63</line>
-          <properties />
-          <option name="timeStamp" value="49" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/ModelAdaptation.java</url>
@@ -582,7 +576,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/_AdaptStruct.java</url>
-          <line>180</line>
+          <line>187</line>
           <properties />
           <option name="timeStamp" value="56" />
         </line-breakpoint>
@@ -593,28 +587,52 @@
           <option name="timeStamp" value="57" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/utils/Utils.java</url>
-          <line>183</line>
-          <properties />
-          <option name="timeStamp" value="58" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Classifier/supervised/IndividualSVM.java</url>
           <line>108</line>
           <properties />
           <option name="timeStamp" value="59" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Classifier/supervised/GlobalSVM.java</url>
-          <line>76</line>
-          <properties />
-          <option name="timeStamp" value="60" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Classifier/supervised/IndividualSVM.java</url>
           <line>183</line>
           <properties />
           <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/mains/MyRouteMain.java</url>
+          <line>53</line>
+          <properties />
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Classifier/supervised/LogisticRegression.java</url>
+          <line>62</line>
+          <properties />
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Classifier/supervised/LogisticRegression.java</url>
+          <line>66</line>
+          <properties />
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Classifier/supervised/LogisticRegression.java</url>
+          <line>94</line>
+          <properties />
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Classifier/supervised/LogisticRegression.java</url>
+          <line>135</line>
+          <properties />
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/mains/MyRouteMain.java</url>
+          <line>56</line>
+          <properties />
+          <option name="timeStamp" value="68" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -662,13 +680,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/RegLR/RegLR.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="173" column="18" selection-start-line="173" selection-start-column="18" selection-end-line="173" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoLinAdapt/CoLinAdapt.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -694,13 +705,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="362" selection-start-line="362" selection-end-line="362" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/structures/_Doc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="377" selection-start-line="377" selection-end-line="377" />
         </state>
       </provider>
     </entry>
@@ -732,20 +736,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-147">
           <caret line="121" column="25" selection-start-line="121" selection-start-column="25" selection-end-line="121" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Analyzer/UserAnalyzer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="107" column="48" selection-start-line="107" selection-start-column="48" selection-end-line="107" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Classifier/supervised/IndSVMColdStart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="15" column="50" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -792,27 +782,178 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Classifier/supervised/liblinear/Model.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="e#1164#1165#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Classifier/supervised/liblinear/Linear.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3195">
+          <caret line="230" selection-start-line="230" selection-end-line="230" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Classifier/supervised/liblinear/SolverType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="86" column="49" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="49" />
+          <folding>
+            <element signature="e#2973#2974#0" expanded="true" />
+            <element signature="e#3019#3020#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/structures/_Review.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1410">
+          <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
+          <folding>
+            <element signature="e#1009#1010#0" expanded="true" />
+            <element signature="e#1041#1042#0" expanded="true" />
+            <element signature="e#1738#1739#0" expanded="true" />
+            <element signature="e#1760#1761#0" expanded="true" />
+            <element signature="e#1788#1789#0" expanded="true" />
+            <element signature="e#1812#1813#0" expanded="true" />
+            <element signature="e#2120#2121#0" expanded="true" />
+            <element signature="e#2142#2143#0" expanded="true" />
+            <element signature="e#2181#2182#0" expanded="true" />
+            <element signature="e#2263#2264#0" expanded="true" />
+            <element signature="e#2337#2338#0" expanded="true" />
+            <element signature="e#2361#2362#0" expanded="true" />
+            <element signature="e#3304#3305#0" expanded="true" />
+            <element signature="e#3332#3333#0" expanded="true" />
+            <element signature="e#3671#3672#0" expanded="true" />
+            <element signature="e#3697#3698#0" expanded="true" />
+            <element signature="e#3730#3731#0" expanded="true" />
+            <element signature="e#3756#3757#0" expanded="true" />
+            <element signature="e#3789#3790#0" expanded="true" />
+            <element signature="e#3806#3807#0" expanded="true" />
+            <element signature="e#3833#3834#0" expanded="true" />
+            <element signature="e#3853#3854#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/_AdaptStruct.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2115">
-          <caret line="180" selection-start-line="180" selection-end-line="180" />
+        <state relative-caret-position="990">
+          <caret line="70" column="4" lean-forward="true" selection-start-line="70" selection-start-column="4" selection-end-line="70" selection-end-column="4" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#2827#2828#0" expanded="true" />
             <element signature="e#2860#2861#0" expanded="true" />
             <element signature="e#2934#2935#0" expanded="true" />
             <element signature="e#2979#2980#0" expanded="true" />
-            <element signature="e#4413#4414#0" expanded="true" />
             <element signature="e#4566#4567#0" expanded="true" />
             <element signature="e#4600#4601#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/MultiTaskSVM.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="12" column="44" lean-forward="true" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/structures/_Doc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="17" column="37" lean-forward="true" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1064#1065#0" expanded="true" />
+            <element signature="e#1096#1097#0" expanded="true" />
+            <element signature="e#1127#1128#0" expanded="true" />
+            <element signature="e#1153#1154#0" expanded="true" />
+            <element signature="e#1183#1184#0" expanded="true" />
+            <element signature="e#1205#1206#0" expanded="true" />
+            <element signature="e#1246#1247#0" expanded="true" />
+            <element signature="e#1275#1276#0" expanded="true" />
+            <element signature="e#1317#1318#0" expanded="true" />
+            <element signature="e#1351#1352#0" expanded="true" />
+            <element signature="e#1416#1417#0" expanded="true" />
+            <element signature="e#1469#1470#0" expanded="true" />
+            <element signature="e#1508#1509#0" expanded="true" />
+            <element signature="e#1536#1537#0" expanded="true" />
+            <element signature="e#1569#1570#0" expanded="true" />
+            <element signature="e#1600#1601#0" expanded="true" />
+            <element signature="e#3685#3686#0" expanded="true" />
+            <element signature="e#3705#3706#0" expanded="true" />
+            <element signature="e#3741#3742#0" expanded="true" />
+            <element signature="e#3761#3762#0" expanded="true" />
+            <element signature="e#3802#3803#0" expanded="true" />
+            <element signature="e#3826#3827#0" expanded="true" />
+            <element signature="e#3856#3857#0" expanded="true" />
+            <element signature="e#3878#3879#0" expanded="true" />
+            <element signature="e#3906#3907#0" expanded="true" />
+            <element signature="e#3927#3928#0" expanded="true" />
+            <element signature="e#3965#3966#0" expanded="true" />
+            <element signature="e#3987#3988#0" expanded="true" />
+            <element signature="e#4032#4033#0" expanded="true" />
+            <element signature="e#4065#4066#0" expanded="true" />
+            <element signature="e#4095#4096#0" expanded="true" />
+            <element signature="e#4116#4117#0" expanded="true" />
+            <element signature="e#4149#4150#0" expanded="true" />
+            <element signature="e#4174#4175#0" expanded="true" />
+            <element signature="e#4207#4208#0" expanded="true" />
+            <element signature="e#4233#4234#0" expanded="true" />
+            <element signature="e#4267#4268#0" expanded="true" />
+            <element signature="e#4300#4301#0" expanded="true" />
+            <element signature="e#4433#4450#0" expanded="true" />
+            <element signature="e#4780#4781#0" expanded="true" />
+            <element signature="e#4810#4811#0" expanded="true" />
+            <element signature="e#4928#4929#0" expanded="true" />
+            <element signature="e#4973#4974#0" expanded="true" />
+            <element signature="e#5012#5013#0" expanded="true" />
+            <element signature="e#5036#5037#0" expanded="true" />
+            <element signature="e#5150#5151#0" expanded="true" />
+            <element signature="e#5212#5213#0" expanded="true" />
+            <element signature="e#5306#5307#0" expanded="true" />
+            <element signature="e#5343#5344#0" expanded="true" />
+            <element signature="e#5376#5377#0" expanded="true" />
+            <element signature="e#5401#5402#0" expanded="true" />
+            <element signature="e#5500#5501#0" expanded="true" />
+            <element signature="e#5537#5538#0" expanded="true" />
+            <element signature="e#5570#5571#0" expanded="true" />
+            <element signature="e#5614#5615#0" expanded="true" />
+            <element signature="e#5871#5872#0" expanded="true" />
+            <element signature="e#5893#5894#0" expanded="true" />
+            <element signature="e#8039#8048#0" expanded="true" />
+            <element signature="e#9744#9745#0" expanded="true" />
+            <element signature="e#9794#9795#0" expanded="true" />
+            <element signature="e#9836#9837#0" expanded="true" />
+            <element signature="e#9862#9863#0" expanded="true" />
+            <element signature="e#9893#9894#0" expanded="true" />
+            <element signature="e#9917#9918#0" expanded="true" />
+            <element signature="e#10831#10832#0" expanded="true" />
+            <element signature="e#10853#10854#0" expanded="true" />
+            <element signature="e#11073#11074#0" expanded="true" />
+            <element signature="e#11102#11103#0" expanded="true" />
+            <element signature="e#11194#11195#0" expanded="true" />
+            <element signature="e#11213#11214#0" expanded="true" />
+            <element signature="e#11248#11249#0" expanded="true" />
+            <element signature="e#11270#11271#0" expanded="true" />
+            <element signature="e#11299#11300#0" expanded="true" />
+            <element signature="e#11324#11325#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/structures/_User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="177" column="34" lean-forward="true" selection-start-line="177" selection-start-column="34" selection-end-line="177" selection-end-column="34" />
+        <state relative-caret-position="90">
+          <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#2635#2636#0" expanded="true" />
             <element signature="e#2677#2678#0" expanded="true" />
             <element signature="e#3414#3415#0" expanded="true" />
@@ -823,96 +964,173 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/Utils.java">
+    <entry file="file://$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/RegLR/RegLR.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="183" selection-start-line="183" selection-end-line="183" />
+        <state relative-caret-position="15">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/structures/_Review.java">
+    <entry file="file://$PROJECT_DIR$/src/Analyzer/UserAnalyzer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="e#372#373#0" expanded="true" />
-            <element signature="e#404#405#0" expanded="true" />
-            <element signature="e#791#792#0" expanded="true" />
-            <element signature="e#828#829#0" expanded="true" />
-            <element signature="e#848#849#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="151">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Classifier/supervised/liblinear/Linear.java">
+    <entry file="file://$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoLinAdapt/asyncCoLinAdapt.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="230" selection-start-line="230" selection-end-line="230" />
+        <state relative-caret-position="81">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Classifier/supervised/liblinear/SolverType.java">
+    <entry file="file://$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/RegLR/RegLR4Sup.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="86" column="49" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="49" />
-          <folding>
-            <element signature="e#2973#2974#0" expanded="true" />
-            <element signature="e#3019#3020#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoLinAdapt/asyncMTLinAdapt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/DirichletProcess/CLinAdaptWithDP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/MTSVMColdStart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/DirichletProcess/CLRWithDP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoLinAdapt/LinAdaptColdStart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Analyzer/IsoUserAnalyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/CoLinAdapt/CoLinAdaptWithDiffFeatureGroups.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/ReTrain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/DirichletProcess/IsoMTCLinAdaptWithDP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Analyzer/BinaryRouteAnalyzer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="753">
-          <caret line="109" column="42" selection-start-line="109" selection-start-column="36" selection-end-line="109" selection-end-column="42" />
+        <state relative-caret-position="300">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Classifier/supervised/IndSVMColdStart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="43" column="59" selection-start-line="43" selection-start-column="59" selection-end-line="43" selection-end-column="59" />
           <folding>
-            <element signature="e#2431#2440#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/ModelAdaptation.java">
+    <entry file="file://$PROJECT_DIR$/src/utils/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="231" selection-start-line="231" selection-end-line="231" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Classifier/supervised/liblinear/Model.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-          <folding>
-            <element signature="e#1164#1165#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mains/MyRouteMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        <state relative-caret-position="-7">
+          <caret line="168" column="42" lean-forward="true" selection-start-line="168" selection-start-column="42" selection-end-line="168" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Classifier/supervised/GlobalSVM.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="76" selection-start-line="76" selection-end-line="76" />
+        <state relative-caret-position="65">
+          <caret line="44" column="32" lean-forward="true" selection-start-line="44" selection-end-line="45" />
           <folding>
-            <element signature="e#604#605#0" expanded="true" />
-            <element signature="e#638#639#0" expanded="true" />
-            <element signature="e#990#1002#0" expanded="true" />
-            <element signature="e#1044#1052#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Classifier/supervised/IndividualSVM.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+        <state relative-caret-position="130">
+          <caret line="22" column="50" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Classifier/BaseClassifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="186" column="22" selection-start-line="186" selection-start-column="22" selection-end-line="186" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mains/MyRouteMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="54" column="24" selection-start-line="54" selection-start-column="15" selection-end-line="54" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/ModelAdaptation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5">
+          <caret line="218" column="18" selection-start-line="218" selection-start-column="18" selection-end-line="218" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Classifier/supervised/LogisticRegression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="227" column="13" selection-start-line="227" selection-start-column="12" selection-end-line="227" selection-end-column="13" />
+          <folding>
+            <element signature="e#6440#6441#0" expanded="true" />
+            <element signature="e#6463#6464#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

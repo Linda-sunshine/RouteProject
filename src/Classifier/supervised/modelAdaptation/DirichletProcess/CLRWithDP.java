@@ -15,7 +15,7 @@ import cern.jet.random.tfloat.FloatUniform;
 import structures._Doc;
 import structures._PerformanceStat.TestMode;
 import structures._Review;
-import structures._Review.rType;
+import structures._Doc.rType;
 import structures._SparseFeature;
 import structures._User;
 import structures._thetaStar;

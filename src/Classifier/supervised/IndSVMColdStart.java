@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import structures._PerformanceStat;
 import structures._Review;
 import structures._PerformanceStat.TestMode;
-import structures._Review.rType;
+import structures._Doc.rType;
 import utils.Utils;
 import Classifier.supervised.liblinear.Feature;
 import Classifier.supervised.liblinear.Linear;
@@ -41,7 +41,7 @@ public class IndSVMColdStart extends IndividualSVM {
 			boolean validUser = false;
 			while(count < m_threshold){
 				r = reviews.get(count);
-				fvs.add(createLibLinearFV(r));
+				fvs.add(createLibLinearFV(r, validUserIndex));
 				ys.add(new Double(r.getYLabel()));
 				trainSize ++;
 				validUser = true;

@@ -8,7 +8,7 @@ import structures._Review;
 import structures._SparseFeature;
 import structures._User;
 import structures._PerformanceStat.TestMode;
-import structures._Review.rType;
+import structures._Doc.rType;
 import Classifier.supervised.liblinear.Feature;
 import Classifier.supervised.liblinear.FeatureNode;
 import Classifier.supervised.liblinear.Linear;
@@ -21,7 +21,7 @@ import Classifier.supervised.modelAdaptation._AdaptStruct;
 import utils.Utils;
 
 public class IndividualSVM extends ModelAdaptation {
-	double m_C = 0.001;
+	double m_C = 1;
 	boolean m_bias = true;
 	Model m_libModel; // Libmodel trained by liblinear.
 	//L2R_LR
@@ -79,7 +79,7 @@ public class IndividualSVM extends ModelAdaptation {
 			boolean validUser = false;
 			for(_Review r:reviews) {				
 				if (r.getType() == rType.ADAPTATION) {//we will only use the adaptation data for this purpose
-					fvs.add(createLibLinearFV(r));
+					fvs.add(createLibLinearFV(r, validUserIndex));
 					ys.add(new Double(r.getYLabel()));
 					trainSize ++;
 					validUser = true;
@@ -194,14 +194,15 @@ public class IndividualSVM extends ModelAdaptation {
 		calcPersonalizedWeights();
 		for(int uIndex: m_cIndexUIndex.get(c))
 			m_userList.get(uIndex).setPersonalizedModel(m_pWeights);//our model always assume the bias term
-	}	
+	}
 
 	protected void setPersonalizedModel(_AdaptStruct user){
 		calcPersonalizedWeights();
 		user.setPersonalizedModel(m_pWeights);
+		user.getUser().setSVMWeights(m_pWeights);
 	}
 	
-	public Feature[] createLibLinearFV(_Review r){
+	public Feature[] createLibLinearFV(_Review r, int userIndex){
 		int fIndex; double fValue;
 		_SparseFeature fv;
 		_SparseFeature[] fvs = r.getSparse();

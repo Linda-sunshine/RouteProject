@@ -3,7 +3,7 @@ package structures;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import structures._Review.rType;
+import structures._Doc.rType;
 import utils.Utils;
 
 /***

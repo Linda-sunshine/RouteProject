@@ -12,7 +12,7 @@ import structures._SparseFeature;
 import structures._User;
 import structures._thetaStar;
 import structures._PerformanceStat.TestMode;
-import structures._Review.rType;
+import structures._Doc.rType;
 
 import utils.Utils;
 import Classifier.supervised.modelAdaptation._AdaptStruct;

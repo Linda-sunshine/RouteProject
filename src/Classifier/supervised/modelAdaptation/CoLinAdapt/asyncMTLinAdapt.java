@@ -8,7 +8,7 @@ import Classifier.supervised.modelAdaptation._AdaptStruct;
 import Classifier.supervised.modelAdaptation.RegLR.asyncRegLR;
 import structures._PerformanceStat.TestMode;
 import structures._Review;
-import structures._Review.rType;
+import structures._Doc.rType;
 import structures._UserReviewPair;
 
 import java.io.BufferedReader;

@@ -17,7 +17,7 @@ import structures._Doc;
 import structures._Review;
 import structures._SparseFeature;
 import structures._User;
-import structures._Review.rType;
+import structures._Doc.rType;
 import utils.Utils;
 
 public class BinaryRouteAnalyzer extends UserAnalyzer {

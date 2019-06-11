@@ -11,7 +11,7 @@ import structures._PerformanceStat;
 import structures._Review;
 import structures._thetaStar;
 import structures._PerformanceStat.TestMode;
-import structures._Review.rType;
+import structures._Doc.rType;
 import utils.Utils;
 
 public class IsoMTCLinAdaptWithDP extends MTCLinAdaptWithDP {
