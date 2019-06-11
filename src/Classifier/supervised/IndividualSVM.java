@@ -21,12 +21,12 @@ import Classifier.supervised.modelAdaptation._AdaptStruct;
 import utils.Utils;
 
 public class IndividualSVM extends ModelAdaptation {
-	double m_C = 0.0000001;
+	double m_C = 0.001;
 	boolean m_bias = true;
 	Model m_libModel; // Libmodel trained by liblinear.
 	//L2R_LR
 	//L2R_L1LOSS_SVC_DUAL
-	SolverType m_solverType = SolverType.L2R_L2LOSS_SVC;
+	SolverType m_solverType = SolverType.L2R_L1LOSS_SVC_DUAL;
 	ArrayList<_AdaptStruct> m_supUserList = new ArrayList<_AdaptStruct>();
 	
 	public IndividualSVM(int classNo, int featureSize){
