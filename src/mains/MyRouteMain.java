@@ -35,26 +35,25 @@ public class MyRouteMain {
 		// ratio for adaptaion
 		int featureSize = 8; // They both have 8 features.
         boolean saveModel = false;//"true"
-        boolean savePerf = true;//"true"
+        boolean savePerf = false;//"true"
 
-        int fold = 5;
+        int fold = 1;
         String model = "mtlinadapt";//"mtreglr","mtlinadapt", "clinadapt"
 
         String tokenModel = "./data/Model/en-token.bin"; // Token model.
         String globalModel = String.format("./data/global_%d.txt", fold);
 
-        for(int perc: new int[]{20}){//20, 30, 40, 50, 60, 70, 80, 90, 100
-		    String userFolder = String.format("./data/updatenormalize/%d/%d", fold, perc);
+        for(int perc: new int[]{10, 20, 30, 40, 50, 60, 70, 80, 90, 100}){
+		    String userFolder = String.format("./data/balanced_normalize/%d/%d", fold, perc);
 		    BinaryRouteAnalyzer analyzer = new BinaryRouteAnalyzer(tokenModel, classNumber, null, Ngram, lengthThreshold);
 		    analyzer.setFeatureSize(featureSize);
-//		    analyzer.config(trainRatio, adaptRatio, enforceAdapt);
 		    analyzer.loadUserDir(userFolder);
 
-		    double lambda = 1;
-			LogisticRegression lr = new LogisticRegression(classNumber, featureSize, lambda);
-			lr.loadUsers(analyzer.getUsers());
-			lr.train(lr.getTrainSet());
-			lr.test();
+//		    double lambda = 1;
+//			LogisticRegression lr = new LogisticRegression(classNumber, featureSize, lambda);
+//			lr.loadUsers(analyzer.getUsers());
+//			lr.train(lr.getTrainSet());
+//			lr.test();
 
 
 //		    GlobalSVM gsvm = new GlobalSVM(classNumber, featureSize);
@@ -78,42 +77,42 @@ public class MyRouteMain {
 
             int nuI = 30;
 
-//            RegLR adaptation = null;
-//            if (model.equals("mtreglr")) {
-//                adaptation = new MTRegLR(classNumber, featureSize, null, null);
-//                ((MTRegLR) adaptation).setU(u);
-//                ((RegLR) adaptation).setR1TradeOff(eta1);
-//                adaptation.setLNormFlag(true);
-//
-//            } else if (model.equals("mtlinadapt")) {
-//                adaptation = new MTLinAdapt(classNumber, featureSize, null, 10, globalModel, null, null);
-//                adaptation.setLNormFlag(true);
-//                ((LinAdapt) adaptation).setR1TradeOffs(eta1, eta2);
-//                ((CoLinAdapt) adaptation).setR2TradeOffs(eta3, eta4);
-////                adaptation.setPersonalization(false);
-//            } else if (model.equals("clinadapt")) {
-//                adaptation = new MTCLinAdaptWithDP(classNumber, featureSize, null, globalModel, null, null);
-//
-//                adaptation.setLNormFlag(false);
-//                ((CLRWithDP) adaptation).setNumberOfIterations(nuI);
-//                ((CLRWithDP) adaptation).setsdA(sdA);
-//                ((CLinAdaptWithDP) adaptation).setsdB(sdB);
-//
-//                ((LinAdapt) adaptation).setR1TradeOffs(eta1, eta2);
-//                ((MTCLinAdaptWithDP) adaptation).setR2TradeOffs(eta3, eta4);
-//            } else {
-//                System.out.println("The model is not developed...");
-//            }
-//            adaptation.loadUsers(analyzer.getUsers());
-//            adaptation.setDisplayLv(displayLv);
-//            adaptation.train();
-//            adaptation.test();
-//            ((MTLinAdapt) adaptation).saveSupModel("./data/mtlinadapt_global.txt");
-//
-//            if (saveModel)
-//                adaptation.saveModel("./data/" + model);
-//            if (savePerf)
-//                adaptation.savePerf(String.format("./data/output/%s_fold_%d_percentage_%d_acc.txt", model, fold, perc));
+            RegLR adaptation = null;
+            if (model.equals("mtreglr")) {
+                adaptation = new MTRegLR(classNumber, featureSize, null, null);
+                ((MTRegLR) adaptation).setU(u);
+                ((RegLR) adaptation).setR1TradeOff(eta1);
+                adaptation.setLNormFlag(true);
+
+            } else if (model.equals("mtlinadapt")) {
+                adaptation = new MTLinAdapt(classNumber, featureSize, null, 10, globalModel, null, null);
+                adaptation.setLNormFlag(true);
+                ((LinAdapt) adaptation).setR1TradeOffs(eta1, eta2);
+                ((CoLinAdapt) adaptation).setR2TradeOffs(eta3, eta4);
+//                adaptation.setPersonalization(false);
+            } else if (model.equals("clinadapt")) {
+                adaptation = new MTCLinAdaptWithDP(classNumber, featureSize, null, globalModel, null, null);
+
+                adaptation.setLNormFlag(false);
+                ((CLRWithDP) adaptation).setNumberOfIterations(nuI);
+                ((CLRWithDP) adaptation).setsdA(sdA);
+                ((CLinAdaptWithDP) adaptation).setsdB(sdB);
+
+                ((LinAdapt) adaptation).setR1TradeOffs(eta1, eta2);
+                ((MTCLinAdaptWithDP) adaptation).setR2TradeOffs(eta3, eta4);
+            } else {
+                System.out.println("The model is not developed...");
+            }
+            adaptation.loadUsers(analyzer.getUsers());
+            adaptation.setDisplayLv(displayLv);
+            adaptation.train();
+            adaptation.test();
+            ((MTLinAdapt) adaptation).saveSupModel("./data/mtlinadapt_global.txt");
+
+            if (saveModel)
+                adaptation.saveModel("./data/" + model);
+            if (savePerf)
+                adaptation.savePerf(String.format("./data/output/%s_fold_%d_percentage_%d_acc.txt", model, fold, perc));
 
         }
 	}

@@ -183,10 +183,6 @@ public class _AdaptStruct {
 		else
 			return m_user.predict(doc);
 	}
-
-//	public int predict(_Doc doc) {
-//		return m_user.predict(doc);
-//	}
 	
 	public double linearFunc(_SparseFeature[] fvs, int classid) {
 		return m_user.linearFunc(fvs, classid);

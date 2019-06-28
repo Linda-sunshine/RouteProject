@@ -1,8 +1,8 @@
 package structures;
 
 public class RouteParameter {
-	public double m_adaptRatio = 0.8; // The ratio of data for training.
-	public String m_dataDir = "/data/RouteData/"; // The path for the user data.
+//	public double m_adaptRatio = 0.8; // The ratio of data for training.
+	public String m_dataDir = "./data/balanced_normalize"; // The path for the user data.
 	public double m_u = 1.1;// the ratio of the global model. 
 	public double m_eta1 = 0.05;
 	public double m_eta2 = 0.05;
@@ -12,15 +12,17 @@ public class RouteParameter {
 	public boolean m_saveModel = false;
 	public boolean m_savePerf = false;
 	
-	public int m_fvSize = 13;
+	public int m_fvSize = 8;
 	public String m_model = "mtlinadapt";
-	public String m_globalDir = "./data/gsvm_1.txt";
-	
+
 	public double m_sdA = 0.1;
 	public double m_sdB = 0.1;
 	
 	public int m_nuI = 30;
- 
+
+	public int m_fold = 1;
+	public int m_perc = 10;
+
 	// Define the parameters used in the algorithm.
 	public RouteParameter(String argv[])
 	{
@@ -31,12 +33,10 @@ public class RouteParameter {
 				break;
 			else if(++i>=argv.length)
 				System.exit(1);
-			else if( argv[i-1].equals("-adaptRatio"))
-				m_adaptRatio = Double.valueOf(argv[i]);
 			else if (argv[i-1].equals("-dataDir"))
 				m_dataDir = argv[i];
-			else if (argv[i-1].equals("-global"))
-				m_globalDir = argv[i];
+			else if (argv[i-1].equals("-model"))
+				m_model = argv[i];
 			else if (argv[i-1].equals("-eta1"))
 				m_eta1 = Double.valueOf(argv[i]);
 			else if (argv[i-1].equals("-eta2"))
@@ -52,7 +52,12 @@ public class RouteParameter {
 			else if (argv[i-1].equals("-saveModel"))
 				m_saveModel = Boolean.valueOf(argv[i]);
 			else if (argv[i-1].equals("-savePerf"))
-				m_savePerf = Boolean.valueOf(argv[i]); 
+				m_savePerf = Boolean.valueOf(argv[i]);
+			else if (argv[i-1].equals("-fold"))
+				m_fold = Integer.valueOf(argv[i]);
+			else if (argv[i-1].equals("-perc")){
+				m_perc = Integer.valueOf(argv[i]);
+			}
 			else
 				exit_with_help();
 		}

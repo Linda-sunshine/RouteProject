@@ -3,13 +3,7 @@
  */
 package Classifier.supervised.modelAdaptation;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -263,8 +257,10 @@ public abstract class ModelAdaptation extends BaseClassifier {
 		for(int i=0; i<m_classNo; i++)
 			System.out.format("Class %d: %.4f\t", i, macroF1[i]/count);
 		System.out.println("\n");
-		System.out.print(String.format("------Overall accuracy: %.4f.-------\n", m_microStat.getAccuracy()));
+		System.out.println("----------------------------------------------------------------------");
+//		System.out.print(String.format("Overall accuracy: %.4f.\n", m_microStat.getAccuracy()));
 		calcAvgPrediction();
+		System.out.println("----------------------------------------------------------------------");
 
 		return Utils.sumOfArray(macroF1);
 	}
@@ -366,34 +362,31 @@ public abstract class ModelAdaptation extends BaseClassifier {
         for(_AdaptStruct user:m_userList) {
             avg += user.getPerfStat().getAccuracy();
         }
-
-        System.out.println("----avg preccision is :-------");
-        System.out.println(avg/m_userList.size());
+        System.out.format("Average precision: %.4f.\n", avg/m_userList.size());
     }
 
-
     @Override
-	public void saveModel(String modelLocation) {	
-		File dir = new File(modelLocation);
-		if(!dir.exists())
-			dir.mkdirs();
-		for(_AdaptStruct user:m_userList) {
-			try {
-	            BufferedWriter writer = new BufferedWriter(new FileWriter(modelLocation+"/"+user.getUserID()+".classifer"));
-	            StringBuilder buffer = new StringBuilder(512);
-	            double[] pWeights = user.getPWeights();
-	            for(int i=0; i<pWeights.length; i++) {
-	            	buffer.append(pWeights[i]);
-	            	if (i<pWeights.length-1)
-	            		buffer.append(',');
-	            }
-	            writer.write(buffer.toString());
-	            writer.close();
-	        } catch (Exception e) {
-	            e.printStackTrace(); 
-	        } 
+	public void saveModel(String filename) {
+		try {
+			StringBuilder buffer = new StringBuilder(512);
+			BufferedWriter writer = new BufferedWriter(new FileWriter(filename));
+
+			for (_AdaptStruct user : m_userList) {
+				buffer.append(user.getUserID() + ',');
+				double[] pWeights = user.getPWeights();
+				for (int i = 0; i < pWeights.length; i++) {
+					buffer.append(pWeights[i]);
+					if (i < pWeights.length - 1)
+						buffer.append(',');
+				}
+				buffer.append("\n");
+			}
+			writer.write(buffer.toString());
+			writer.close();
+		}catch (IOException e){
+			e.printStackTrace();
 		}
-		System.out.format("[Info]Save personalized models to %s.\n", modelLocation);
+		System.out.format("[Info]Save personalized models to %s.\n", filename);
 	}
 	
 	@Override
@@ -433,12 +426,14 @@ public abstract class ModelAdaptation extends BaseClassifier {
 	public void savePerf(String filename) {
 		try {
 			BufferedWriter writer = new BufferedWriter(new FileWriter(filename));
+			StringBuilder buffer = new StringBuilder(512);
 			for(_AdaptStruct user:m_userList) {
-	            StringBuilder buffer = new StringBuilder(512);
-	            buffer.append(String.format("%s\t%.4f\n", user.getUserID(), user.getPerfStat().getAccuracy()));
-	            writer.write(buffer.toString());
-	        } 
-	        writer.close();
+	            int[][] TPTable = user.getPerfStat().getConfusionMat();
+	            buffer.append(String.format("%s\t%d\t%d\t%d\t%d\t%.4f\n", user.getUserID(), TPTable[0][0],
+						TPTable[0][1], TPTable[1][0], TPTable[1][1], user.getPerfStat().getAccuracy()));
+	        }
+			writer.write(buffer.toString());
+			writer.close();
 		}catch (Exception e) {
 			e.printStackTrace();  
 		}

@@ -80,7 +80,10 @@ public class _PerformanceStat {
 	public double getF1(int classId) {
 		return m_perfTable[classId][2];
 	}
-	
+
+	public int[][] getConfusionMat(){
+		return m_confusionMat;
+	}
 	public int getEntry(int i, int j) {
 		return m_confusionMat[i][j];
 	}

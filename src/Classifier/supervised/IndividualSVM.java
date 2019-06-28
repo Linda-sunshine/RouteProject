@@ -21,7 +21,7 @@ import Classifier.supervised.modelAdaptation._AdaptStruct;
 import utils.Utils;
 
 public class IndividualSVM extends ModelAdaptation {
-	double m_C = 1;
+	double m_C = 0.1;
 	boolean m_bias = true;
 	Model m_libModel; // Libmodel trained by liblinear.
 	//L2R_LR
