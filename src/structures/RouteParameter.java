@@ -23,6 +23,8 @@ public class RouteParameter {
 	public int m_fold = 1;
 	public int m_perc = 10;
 
+	public String m_globalModel = String.format("./data/global_%d.txt", m_fold);
+
 	// Define the parameters used in the algorithm.
 	public RouteParameter(String argv[])
 	{
@@ -57,6 +59,8 @@ public class RouteParameter {
 				m_fold = Integer.valueOf(argv[i]);
 			else if (argv[i-1].equals("-perc")){
 				m_perc = Integer.valueOf(argv[i]);
+			}else if (argv[i-1].equals("-global")){
+				m_globalModel = argv[i];
 			}
 			else
 				exit_with_help();

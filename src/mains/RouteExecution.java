@@ -27,8 +27,7 @@ public class RouteExecution {
 		RouteParameter param = new RouteParameter(args);
 		String tokenModel = "./data/Model/en-token.bin"; // Token model.
 		String userFolder = String.format("%s/%d/%d/", param.m_dataDir, param.m_fold, param.m_perc);
-		String globalModel = String.format("./data/global_%d.txt", param.m_fold);
-		
+
 		BinaryRouteAnalyzer analyzer = new BinaryRouteAnalyzer(tokenModel, classNumber, null, Ngram, lengthThreshold);
 		analyzer.setFeatureSize(param.m_fvSize);
 		analyzer.loadUserDir(userFolder);
@@ -45,11 +44,11 @@ public class RouteExecution {
 			((RegLR) adaptation).setR1TradeOff(param.m_eta1);
 			adaptation.setLNormFlag(true);
 		} else if(param.m_model.equals("mtlinadapt")){
-			adaptation = new MTLinAdapt(classNumber, param.m_fvSize, null, 15, globalModel, null, null);
+			adaptation = new MTLinAdapt(classNumber, param.m_fvSize, null, 15, param.m_globalModel, null, null);
 			((MTLinAdapt) adaptation).setParams(param.m_eta1, param.m_eta2, param.m_eta3, param.m_eta4);
 			adaptation.setLNormFlag(true);
 		} else if(param.m_model.equals("clinadapt")){
-			adaptation = new MTCLinAdaptWithDP(classNumber, param.m_fvSize, null, globalModel, null, null);
+			adaptation = new MTCLinAdaptWithDP(classNumber, param.m_fvSize, null, param.m_globalModel, null, null);
 			adaptation.setLNormFlag(false);
 			((CLRWithDP) adaptation).setNumberOfIterations(param.m_nuI);
 			((CLRWithDP) adaptation).setsdA(param.m_sdA);

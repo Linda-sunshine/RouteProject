@@ -1,0 +1,20 @@
+231 users are loaded from ./data/balanced_normalize/1/90/...
+9 features are loaded for global model.
+[Info]Training size: 0(0.00), adaptation size: 0(0.00), and testing size: 0(0.00)
+oooooooxooooooooxooooooxooooooooooooooooooooxoooooooooooooooooooooooooooooooooooooxoooooxoooooxooooo
+ooooooooooooooxooooxooooooooooooooooooooooooooooooooo
+MT-LinAdapt[dim:9, supDim:9, eta1:0.050,eta2:0.050,eta3:0.050,eta4:0.050, personalized:true]
+Micro confusion matrix:
+	0	1
+0	1923	848
+1	846	1903
+Micro F1:
+Class 0: 0.6942	Class 1: 0.6920	
+Macro F1:
+Class 0: 0.6932	Class 1: 0.6730	
+
+----------------------------------------------------------------------
+Average precision: 0.7037.
+----------------------------------------------------------------------
+[Info]Save personalized models to ./data/output/Weights_model_mtlinadapt_fold_1_perc_90.txt.
+[Info]Save all users' performance to ./data/output/Performance_model_mtlinadapt_fold_1_perc_90.txt.
