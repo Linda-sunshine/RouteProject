@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea75b2f3-ff01-42ef-8dc5-bf185597fbad" name="Default Changelist" comment="" />
+    <list default="true" id="ea75b2f3-ff01-42ef-8dc5-bf185597fbad" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/Model_mtlinadapt_fold_1_perc_10.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/Model_mtlinadapt_fold_1_perc_10.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/Model_mtlinadapt_fold_1_perc_20.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/Model_mtlinadapt_fold_1_perc_20.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/Model_mtlinadapt_fold_1_perc_40.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/Model_mtlinadapt_fold_1_perc_40.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/Model_mtlinadapt_fold_1_perc_50.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/Model_mtlinadapt_fold_1_perc_50.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run_one_fold" beforeDir="false" afterPath="$PROJECT_DIR$/run_one_fold" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,23 +20,25 @@
     <session id="855998640">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="15" />
+          <entry key="java" value="18" />
           <entry key="properties" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="15" />
+          <entry key="JAVA" value="18" />
           <entry key="Properties" value="2" />
         </counts>
       </usages-collector>
@@ -50,7 +59,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/mains/MyRouteMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
+            <state>
               <caret line="114" column="35" selection-start-line="114" selection-start-column="27" selection-end-line="114" selection-end-column="35" />
             </state>
           </provider>
@@ -59,17 +68,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Analyzer/UserAnalyzer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
+            <state relative-caret-position="1230">
               <caret line="97" column="24" selection-start-line="97" selection-start-column="24" selection-end-line="97" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/mains/RouteExecution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4">
-              <caret line="33" column="30" lean-forward="true" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+            <state relative-caret-position="299">
+              <caret line="46" column="36" selection-start-line="46" selection-start-column="36" selection-end-line="46" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -78,22 +87,40 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/ModelAdaptation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="497">
+              <caret line="439" column="60" selection-start-line="439" selection-start-column="49" selection-end-line="439" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Analyzer/BinaryRouteAnalyzer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="90" column="63" selection-start-line="90" selection-start-column="63" selection-end-line="90" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/structures/_PerformanceStat.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
+            <state relative-caret-position="1125">
               <caret line="83" column="34" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="34" />
               <folding>
-                <element signature="e#2176#2177#0" expanded="true" />
+                <element signature="e#2175#2176#0" expanded="true" />
                 <element signature="e#2203#2204#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/structures/RouteParameter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-251">
+            <state relative-caret-position="165">
               <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
             </state>
           </provider>
@@ -141,6 +168,7 @@
     <panes>
       <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -157,13 +185,18 @@
               <item name="RouteProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="RouteProject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Analyzer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RouteProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RouteProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="mains" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -220,17 +253,19 @@
       <workItem from="1560725792403" duration="655000" />
       <workItem from="1561670310166" duration="4552000" />
       <workItem from="1561734274417" duration="5020000" />
+      <workItem from="1562444921673" duration="732000" />
+      <workItem from="1563663795699" duration="552000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10695000" />
+    <option name="totallyTimeSpent" value="11979000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="789" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20386267" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20958512" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -295,54 +330,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/_AdaptStruct.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="736">
+          <caret line="190" column="27" selection-start-line="190" selection-start-column="11" selection-end-line="190" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/mains/MyRouteMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
+        <state>
           <caret line="114" column="35" selection-start-line="114" selection-start-column="27" selection-end-line="114" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Analyzer/UserAnalyzer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
+        <state relative-caret-position="1230">
           <caret line="97" column="24" selection-start-line="97" selection-start-column="24" selection-end-line="97" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/ModelAdaptation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="368" column="16" selection-start-line="368" selection-start-column="16" selection-end-line="368" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/_AdaptStruct.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
-          <caret line="190" column="27" selection-start-line="190" selection-start-column="11" selection-end-line="190" selection-end-column="27" />
-          <folding>
-            <element signature="e#4713#4714#0" expanded="true" />
-            <element signature="e#4747#4748#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mains/RouteExecution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4">
-          <caret line="33" column="30" lean-forward="true" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/structures/_PerformanceStat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
+        <state relative-caret-position="1125">
           <caret line="83" column="34" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="34" />
           <folding>
-            <element signature="e#2176#2177#0" expanded="true" />
+            <element signature="e#2175#2176#0" expanded="true" />
             <element signature="e#2203#2204#0" expanded="true" />
           </folding>
         </state>
@@ -350,8 +364,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/structures/RouteParameter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-251">
+        <state relative-caret-position="165">
           <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Analyzer/BinaryRouteAnalyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="90" column="63" selection-start-line="90" selection-start-column="63" selection-end-line="90" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Classifier/supervised/modelAdaptation/ModelAdaptation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="439" column="60" selection-start-line="439" selection-start-column="49" selection-end-line="439" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mains/RouteExecution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="46" column="36" selection-start-line="46" selection-start-column="36" selection-end-line="46" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

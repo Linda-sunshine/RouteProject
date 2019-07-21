@@ -1,6 +1,6 @@
 #!/bin/sh
-model=mtlinadapt
+model=gsvm
 fold=1
 for perc in 10 20 30 40 50 60 70 80 90 
-	noup do ./run -model $model -fold $fold -perc $perc -saveModel true -savePerf true > ./log/Model_$model\_fold_$fold\_perc_$perc.log
+    do nohup ./run -model $model -fold $fold -perc $perc -saveModel true -savePerf true > ./log/Model_$model\_fold_$fold\_perc_$perc.log
 done

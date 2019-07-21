@@ -2,7 +2,7 @@
 9 features are loaded for global model.
 [Info]Training size: 0(0.00), adaptation size: 0(0.00), and testing size: 0(0.00)
 oooooooxoooooooooooooooooooooooxoooooooooooooooooooooooooooooooooooooooooooxoooooooooooooooooooooooo
-oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooxooooooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooxoooooooooooooooooooooooooooo
 MT-LinAdapt[dim:9, supDim:9, eta1:0.050,eta2:0.050,eta3:0.050,eta4:0.050, personalized:true]
 Micro confusion matrix:
 	0	1
