@@ -10,7 +10,7 @@ output/*
 Docs/*
 .idea/*
 log/*
-*output/*
+*out/*
 .project
 *.iml
 *.classpath
