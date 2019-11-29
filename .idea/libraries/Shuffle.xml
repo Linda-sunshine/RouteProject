@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="Shuffle">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/data/Dataset2/Shuffle.zip!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
