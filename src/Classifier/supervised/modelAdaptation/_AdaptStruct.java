@@ -49,7 +49,6 @@ public class _AdaptStruct {
 				m_adaptEndPos = i;
 			}
 		}
-		
 		if (m_adaptEndPos!=-1)
 			m_adaptEndPos ++;//point to the next testing data or the end of reviews
 		
@@ -59,10 +58,22 @@ public class _AdaptStruct {
 	public _AdaptStruct(_User user, int id) {
 		m_user = user;
 		m_id = id;
+
 		//trace to the first and last adaptation instance
 		//we assume the instances are ordered and then separate into [train, adapt, test]
-		m_adaptStartPos = 0;
-		m_adaptEndPos = 10;
+		m_adaptStartPos = -1;
+		m_adaptEndPos = -1;
+		ArrayList<_Review> reviews = user.getReviews();
+		for(int i=0; i<reviews.size(); i++) {
+			if (reviews.get(i).getType() == rType.ADAPTATION) {
+				if (m_adaptStartPos==-1)
+					m_adaptStartPos = i;
+				m_adaptEndPos = i;
+			}
+		}
+		if (m_adaptEndPos!=-1)
+			m_adaptEndPos ++;//point to the next testing data or the end of reviews
+
 		resetAdaptPtr();
 	}
 	public int getId() {

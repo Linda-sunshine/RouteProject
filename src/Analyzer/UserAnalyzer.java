@@ -115,11 +115,6 @@ public class UserAnalyzer extends DocAnalyzer {
 	}
 	
 	String extractUserID(String text) {
-//		int index = text.indexOf('.');
-//		if (index==-1)
-//			return text;
-//		else
-//			return text.substring(0, index);
 		int index = text.indexOf('T');
 		if(index == -1)
 			return "-1";

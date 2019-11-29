@@ -2,7 +2,7 @@ package structures;
 
 public class RouteParameter {
 //	public double m_adaptRatio = 0.8; // The ratio of data for training.
-	public String m_dataDir = "./data/balanced_normalize"; // The path for the user data.
+	public String m_dataDir = "./data/processeddata"; // The path for the user data.
 	public double m_u = 1.1;// the ratio of the global model. 
 	public double m_eta1 = 0.05;
 	public double m_eta2 = 0.05;
@@ -25,6 +25,9 @@ public class RouteParameter {
 
 	public String m_globalModel = String.format("./data/global_%d.txt", m_fold);
 
+	public boolean m_multi = false;
+
+	public int m_cores = 4;
 	// Define the parameters used in the algorithm.
 	public RouteParameter(String argv[])
 	{
@@ -61,6 +64,10 @@ public class RouteParameter {
 				m_perc = Integer.valueOf(argv[i]);
 			}else if (argv[i-1].equals("-global")){
 				m_globalModel = argv[i];
+			}else if (argv[i-1].equals("-multi")){
+				m_multi = Boolean.valueOf(argv[i]);
+			}else if (argv[i-1].equals("-cores")){
+				m_cores = Integer.valueOf(argv[i]);
 			}
 			else
 				exit_with_help();

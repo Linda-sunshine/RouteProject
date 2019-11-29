@@ -47,8 +47,11 @@ public class IndividualSVM extends ModelAdaptation {
 	@Override
 	public void loadUsers(ArrayList<_User> userList) {
 		m_userList = new ArrayList<_AdaptStruct>();
-		for(_User user:userList) 
+		for(_User user:userList) {
+			if (user.getUserID().equals("130"))
+				System.out.println("Debug");
 			m_userList.add(new _AdaptStruct(user, Integer.valueOf(user.getUserID())));
+		}
 		m_pWeights = new double[m_featureSize+1];		
 	}
 	// Added by Lin for using super users for training.

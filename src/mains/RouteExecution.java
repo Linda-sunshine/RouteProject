@@ -3,6 +3,7 @@ package mains;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
+import Analyzer.MultiThreadedBinaryRouteAnalyzer;
 import Classifier.supervised.GlobalSVM;
 import Classifier.supervised.IndividualSVM;
 import opennlp.tools.util.InvalidFormatException;
@@ -28,7 +29,15 @@ public class RouteExecution {
 		String tokenModel = "./data/Model/en-token.bin"; // Token model.
 		String userFolder = String.format("%s/%d/%d/", param.m_dataDir, param.m_fold, param.m_perc);
 
-		BinaryRouteAnalyzer analyzer = new BinaryRouteAnalyzer(tokenModel, classNumber, null, Ngram, lengthThreshold);
+		BinaryRouteAnalyzer analyzer = null;
+		if(param.m_multi){
+			int runNumOfCores = Runtime.getRuntime().availableProcessors();
+			int numOfCores = param.m_cores > runNumOfCores ? runNumOfCores : param.m_cores;
+			analyzer = new MultiThreadedBinaryRouteAnalyzer(tokenModel, classNumber, null, Ngram, lengthThreshold, numOfCores);
+			System.out.print(String.format("------------Multi-thread: %d cores are used--------------------\n", numOfCores));
+		} else {
+			analyzer = new BinaryRouteAnalyzer(tokenModel, classNumber, null, Ngram, lengthThreshold);
+		}
 		analyzer.setFeatureSize(param.m_fvSize);
 		analyzer.loadUserDir(userFolder);
 		analyzer.Normalize(3);

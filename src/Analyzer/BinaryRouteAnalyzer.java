@@ -27,41 +27,6 @@ public class BinaryRouteAnalyzer extends UserAnalyzer {
 			throws InvalidFormatException, FileNotFoundException, IOException {
 		super(tokenModel, classNo, providedCV, Ngram, threshold);
 	}
-	
-//	@Override
-//	public void loadUser(String filename){
-//		try {
-//			File file = new File(filename);
-//			BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(file), "UTF-8"));
-//			String line;
-//			String userID = extractUserID(file.getName()); //UserId is contained in the filename.
-//			// Skip the first line since it is not instances.
-////			reader.readLine();
-//
-//			int ylabel;
-//			String[] strs;
-//			_Review review;
-//			ArrayList<_Review> reviews = new ArrayList<_Review>();
-//			while((line = reader.readLine()) != null){
-//				strs = line.split(",");
-//				if(strs.length == m_featureSize+1){
-//					// Construct the new review.
-//					ylabel =  Double.valueOf(strs[m_featureSize]).intValue();
-//					review = new _Review(m_corpus.getCollection().size(), line, ylabel);
-//					AnalyzeDoc(review);
-//					reviews.add(review);
-//					m_corpus.addDoc(review);
-//					m_classMemberNo[ylabel]++;
-//				}
-//			}
-//			allocateReviews(reviews);
-//			m_users.add(new _User(userID, m_classNo, reviews)); //create new user from the file.
-//			reader.close();
-//		} catch(IOException e){
-//			e.printStackTrace();
-//		}
-//	}
-
 
 	@Override
 	public void loadUser(String filename){
